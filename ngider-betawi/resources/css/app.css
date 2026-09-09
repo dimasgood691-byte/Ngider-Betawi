@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: 'Inter', sans-serif;
+    --font-heading: 'Plus Jakarta Sans', sans-serif;
+
+    /* Custom Color Palette (60-30-10 Rule) */
+    --color-brand-60: #F8FAFC;
+    /* Background dominan */
+    --color-brand-30: #0284C7;
+    /* Biru cerah utama (Secondary) */
+    --color-brand-30-hover: #0369A1;
+    /* Darker blue untuk hover state */
+    --color-brand-10: #F97316;
+    /* Oranye muda aksen (Accent/CTA) */
+    --color-brand-10-hover: #EA580C;
+    /* Darker orange untuk hover state */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+}
