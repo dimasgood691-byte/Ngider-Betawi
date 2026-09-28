@@ -13,8 +13,17 @@ Alpine.start();
 // Initialize AOS (Animate On Scroll)
 document.addEventListener('DOMContentLoaded', () => {
     AOS.init({
-        duration: 800,
+        duration: 700,
         once: true,
         easing: 'ease-in-out',
     });
+});
+
+// resources/js/app.js
+
+window.addEventListener('load', () => {
+    const loader = document.getElementById('loading-screen');
+    if (loader) {
+        loader.classList.add('hidden');
+    }
 });

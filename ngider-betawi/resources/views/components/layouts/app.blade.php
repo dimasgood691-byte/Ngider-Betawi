@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow"> <!-- Khusus proteksi dasar halaman -->
-    <title>{{ $title ?? 'Ngider Betawi - Wisata Edukasi & Gamifikasi Culture' }}</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/png" href="{{ asset('logo-ngiderbetawi.png') }}">
+    <title>{{ $title ?? 'Ngider Betawi' }}</title>
 
     <!-- Google Fonts: Plus Jakarta Sans & Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +17,18 @@
 </head>
 
 <body class="font-sans antialiased bg-slate-50 text-slate-800">
+
+    <div id="loading-screen">
+        <div class="spinner"></div>
+        <p style="margin-top: 12px; color: #4b5563; font-family: sans-serif;">Memuat halaman...</p>
+    </div>
+
     {{ $slot }}
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 
 </html>

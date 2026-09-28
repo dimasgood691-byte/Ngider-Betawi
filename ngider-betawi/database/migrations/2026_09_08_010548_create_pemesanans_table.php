@@ -23,7 +23,7 @@ return new class extends Migration
                 'menunggu_verifikasi',
                 'terverifikasi',
                 'dikonfirmasi',
-                'ditolak'
+                'ditolak',
             ])->default('menunggu_verifikasi');
             $table->timestamps();
         });
