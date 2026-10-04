@@ -17,7 +17,7 @@
 </head>
 
 <body class="h-full font-sans antialiased text-slate-800" x-data="{ sidebarOpen: false }">
-    <div class="min-h-full flex flex-col lg:flex-row">
+    <div class="h-full min-h-full flex flex-col lg:flex-row">
 
         {{-- Mobile Sidebar Backdrop --}}
         <div x-show="sidebarOpen"
@@ -27,9 +27,9 @@
 
         {{-- Sidebar Navigation --}}
         <aside :class="sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'"
-            class="fixed inset-y-0 left-0 z-50 w-72 bg-slate-900 text-slate-300 flex flex-col justify-between transition-transform duration-300 ease-in-out lg:static lg:translate-x-0">
+            class="fixed inset-y-0 left-0 z-50 w-72 bg-slate-900 text-slate-300 flex flex-col justify-between transition-transform duration-300 ease-in-out lg:sticky lg:top-0 lg:bottom-auto lg:h-screen lg:self-start lg:shrink-0 lg:translate-x-0">
 
-            <div class="p-6 space-y-6 overflow-y-auto">
+            <div class="flex-1 min-h-0 overflow-y-auto p-6 space-y-6">
                 {{-- Logo & Brand --}}
                 <div class="flex items-center justify-between">
                     <a href="{{ route('admin.dashboard') }}" class="flex items-center space-x-3">
@@ -105,7 +105,7 @@
             </div>
 
             {{-- User Info & Logout Button --}}
-            <div class="p-6 border-t border-slate-800 bg-slate-950/40 space-y-4">
+            <div class="shrink-0 p-6 border-t border-slate-800 bg-slate-950/40 space-y-4">
                 <div class="flex items-center space-x-3">
                     <div class="w-9 h-9 rounded-xl bg-amber-600 text-white font-black text-xs flex items-center justify-center shadow-sm">
                         {{ strtoupper(substr(auth()->user()->name ?? 'A', 0, 2)) }}
@@ -128,7 +128,7 @@
         </aside>
 
         {{-- Main Content Container --}}
-        <div class="flex-1 flex flex-col min-w-0 overflow-hidden">
+        <div class="flex-1 flex flex-col min-w-0 min-h-0 overflow-hidden">
 
             {{-- Top Header Bar --}}
             <header class="bg-white border-b border-slate-200 sticky top-0 z-30 px-6 py-4 flex items-center justify-between">
@@ -154,7 +154,7 @@
             </header>
 
             {{-- Flash Alert Messages --}}
-            <main class="flex-1 p-6 sm:p-8 overflow-y-auto space-y-6">
+            <main class="flex-1 min-h-0 p-6 sm:p-8 overflow-y-auto space-y-6">
                 @if(session('success'))
                 <div class="p-4 bg-emerald-50 border border-emerald-200 rounded-2xl text-emerald-800 text-xs sm:text-sm font-semibold flex items-center gap-3 shadow-xs">
                     <i data-lucide="check-circle" class="w-5 h-5 text-emerald-600 shrink-0"></i>

@@ -6,8 +6,15 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
+    /**
+     * Run the migrations.
+     */
     public function up(): void
     {
+        if (Schema::hasTable('funfact_betawi')) {
+            return;
+        }
+
         Schema::create('funfact_betawi', function (Blueprint $table) {
             $table->id();
             $table->string('judul');
@@ -17,8 +24,8 @@ return new class extends Migration
         });
     }
 
-    public function down(): void
-    {
-        Schema::dropIfExists('funfact_betawi');
-    }
+    /**
+     * Preserve the table because it may have existed before this repair migration.
+     */
+    public function down(): void {}
 };

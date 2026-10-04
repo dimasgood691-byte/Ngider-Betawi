@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use App\Models\FunfactBetawi;
 use App\Models\JadwalWisata;
 use App\Models\PaketWisata;
 use App\Models\PosKegiatan;
@@ -18,92 +17,65 @@ class DatabaseSeeder extends Seeder
         // 1. Akun Admin Utama
         User::create([
             'name' => 'Admin Ngider Betawi',
-            'email' => 'admin@ngiderbetawi.com',
-            'password' => Hash::make('password123'),
+            'email' => 'ngiderbetawi@gmail.com',
+            'password' => Hash::make('ngiderbetawi2026'),
             'role' => 'admin',
         ]);
 
         // 2. Data Master Pos Kegiatan
         $pos1 = PosKegiatan::create([
-            'nama_pos' => 'Melukis Topeng Betawi',
-            'deskripsi' => 'Mengenal kebudayaan topeng Betawi dan mengasah kreativitas siswa.',
-            'challenge' => 'Mewarnai topeng kayu dengan pola warna khas Betawi.',
-            'reward' => 'Sertifikat Kreativitas + Topeng Hasil Karya',
+            'nama_pos' => 'Menabuh Harmoni lewat Marawis',
+            'deskripsi' => 'Mengenal sejarah, fungsi sosial, dan filosofi marawis sebagai perpaduan budaya Arab, Melayu, dan Betawi, lalu memainkannya bersama seniman Padepokan Ciliwung Condet.',
+            'challenge' => 'Pelajari irama dasar lalu mainkan marawis bersama kelompok hingga tercipta harmoni.',
+            'reward' => 'Cap Misi #1',
         ]);
 
         $pos2 = PosKegiatan::create([
-            'nama_pos' => 'Bermain Musik Gambang Kromong',
-            'deskripsi' => 'Praktik langsung alat musik tradisional Betawi bersama maestro.',
-            'challenge' => 'Memainkan nada lagu "Sirih Kuning" secara bersama-sama.',
-            'reward' => 'Pin Pengenalan Musik Tradisional',
+            'nama_pos' => 'Makna dibalik Topeng Betawi',
+            'deskripsi' => 'Memahami filosofi warna dan karakter Topeng Betawi, lalu melukis topeng kosong sebagai suvenir budaya.',
+            'challenge' => 'Lukis topeng kosong dengan warna dan karakter sesuai kreativitasmu.',
+            'reward' => 'Cap Misi #2',
         ]);
 
         $pos3 = PosKegiatan::create([
-            'nama_pos' => 'Aksi Bersih Ciliwung',
-            'deskripsi' => 'Edukasi lingkungan dan pengelolaan sampah di bantaran sungai.',
-            'challenge' => 'Memilah 5 kg sampah organik & anorganik dalam kelompok.',
-            'reward' => 'Lencana Pelopor Lingkungan Ciliwung',
-        ]);
-
-        $pos4 = PosKegiatan::create([
-            'nama_pos' => 'Menanam Endemik Betawi',
-            'deskripsi' => 'Penanaman pohon langka seperti Kecapi, Gandaria, dan Salak Condet.',
-            'challenge' => 'Menanam 1 bibit pohon dengan teknik pembibitan yang benar.',
-            'reward' => 'Tanaman Hias Edukasi untuk Sekolah',
+            'nama_pos' => 'Menjaga Ciliwung & Warisan Betawi',
+            'deskripsi' => 'Aksi konservasi Ciliwung melalui bersih sampah bantaran, menanam pohon endemik Loa atau Melinjo, dan refleksi filosofi Kembar Aer.',
+            'challenge' => 'Bersihkan area bantaran, tanam pohon endemik, dan ikuti sesi refleksi alam serta budaya.',
+            'reward' => 'Cap Misi #3 (Selesai)',
         ]);
 
         // 3. Paket Wisata
         $paket1 = PaketWisata::create([
-            'nama_paket' => 'Paket Betawi Cilik (Art & Culture)',
-            'deskripsi' => 'Fokus pada eksplorasi seni, musik, dan kebudayaan fisik Betawi.',
-            'harga' => 75000,
+            'nama_paket' => 'Ngider Betawi Tour Package',
+            'deskripsi' => 'Paket wisata edukatif untuk mengenal budaya Betawi melalui berbagai kegiatan menarik.',
+            'harga' => 100000,
             'gambar' => null,
         ]);
-        $paket1->posKegiatan()->attach([$pos1->id, $pos2->id]);
-
-        $paket2 = PaketWisata::create([
-            'nama_paket' => 'Paket Ciliwung Eco-Explorer',
-            'deskripsi' => 'Eksplorasi penuh budaya Betawi plus aksi peduli lingkungan Ciliwung.',
-            'harga' => 120000,
-            'gambar' => null,
-        ]);
-        $paket2->posKegiatan()->attach([$pos1->id, $pos2->id, $pos3->id, $pos4->id]);
+        $paket1->posKegiatan()->attach([$pos1->id, $pos2->id, $pos3->id]);
 
         // 4. Jadwal Wisata
         JadwalWisata::create([
             'tanggal' => now()->addDays(3)->format('Y-m-d'),
-            'kuota' => 50,
-            'sisa_kuota' => 50,
-        ]);
-        JadwalWisata::create([
-            'tanggal' => now()->addDays(7)->format('Y-m-d'),
-            'kuota' => 60,
-            'sisa_kuota' => 60,
+            'kuota' => 150,
+            'sisa_kuota' => 150,
         ]);
 
-        // 5. Funfact Betawi
-        FunfactBetawi::create([
-            'judul' => 'Asal Usul Ondel-Ondel',
-            'isi' => 'Dahulu Ondel-Ondel bernama Barongan dan berfungsi sebagai penolak bala dari gangguan roh jahat.',
-            'gambar' => null,
-        ]);
-
-        // 6. Testimoni
+        // 5. Testimoni
         Testimoni::create([
-            'nama_sekolah' => 'SDN Condet 01 Pagi',
-            'isi' => 'Anak-anak sangat antusias melukis topeng dan belajar menjaga Ciliwung. Konsep gamifikasinya top!',
+            'nama_sekolah' => 'SMPN 43 JAKARTA',
+            'isi' => 'SERU BANGET, pemateri menyamakan materi nya dengan sangat baik dan jelas, penyelenggara pun bersikap sangat baik dan ramah terhadap peserta wisata seperti saya. Dengan 100k sudah mendapatkan semuanya, saya rasa ini sangat sebanding',
             'rating' => 5,
         ]);
 
         Testimoni::create([
-            'nama_sekolah' => 'SDN Condet 02 Pagi',
-            'isi' => 'Anak-anak sangat antusias melukis topeng dan belajar menjaga Ciliwung. Konsep gamifikasinya top!',
+            'nama_sekolah' => "MTSN AS'SAADAH CONDET",
+            'isi' => 'terimakasih kepada ka audita dan tim, karna keramaha tamahan nya dan sistem nya sangat bagus, kami merasa sangat senang, bahagia dan puas, saya harap kegiatan ngider betawi dapat dikenal luas oleh masyarakat karna sangat bermanfaat di era sekarang.',
             'rating' => 5,
         ]);
 
         Testimoni::create([
-            'nama_sekolah' => 'SDN Condet 03 Pagi',
-            'isi' => 'Anak-anak sangat antusias melukis topeng dan belajar menjaga Ciliwung. Konsep gamifikasinya top!',
+            'nama_sekolah' => 'SDN BALEKAMBANG 01',
+            'isi' => 'Kesan aku, acara Ngider Betawi kemaren di Padepokan Ciliwung Condet seru abis dan dapet banget feel budayanya! Pesan buat tim panitia, terus semangat ya ngadain acara keren kayak gini biar aku dan temen-temen generasi muda makin paham ama tradisi sendiri dan kagak kuper soal budaya Betawi. Paling saran dari aku, ke depannya makin banyakin aja aktivitas seru atau game interaktifnya pas keliling biar suasananya tambah pecah dan kagak bosenin. Sukses terus buat tim Ngider Betawi! 😊',
             'rating' => 5,
         ]);
     }

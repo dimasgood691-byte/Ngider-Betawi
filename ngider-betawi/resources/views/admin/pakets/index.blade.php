@@ -64,14 +64,6 @@
                 </div>
                 @endif
             </div>
-
-            <div class="pt-4 mt-4 border-t border-slate-100 flex justify-between items-center text-xs text-slate-400 font-medium">
-                <span>{{ $p->pemesanan_count }} total pemesanan</span>
-                <a href="{{ route('booking.create', $p->id) }}" target="_blank" class="text-amber-600 font-bold hover:underline flex items-center gap-1 text-[11px]">
-                    <span>Coba Booking</span>
-                    <i data-lucide="external-link" class="w-3 h-3"></i>
-                </a>
-            </div>
         </div>
         @empty
         <div class="col-span-full bg-white p-12 rounded-3xl border border-slate-200 text-center text-slate-400">

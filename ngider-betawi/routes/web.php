@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\Admin\Auth\ForgotPasswordController;
 use App\Http\Controllers\Admin\Auth\LoginController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\JadwalWisataController as AdminJadwalWisataController;
@@ -35,15 +34,13 @@ Route::post('/booking', [PemesananController::class, 'store'])->name('booking.st
 
 Route::prefix('admin')->name('admin.')->group(function () {
 
-    // --- Guest Only (Belum Login) ---
+    // --- Guest Only ---
     Route::middleware('guest')->group(function () {
         Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
         Route::post('/login', [LoginController::class, 'login'])->name('login.post');
-        Route::get('/forgot-password', [ForgotPasswordController::class, 'showLinkRequestForm'])->name('password.request');
-        Route::post('/forgot-password', [ForgotPasswordController::class, 'sendResetLinkEmail'])->name('password.email');
     });
 
-    // --- Protected Admin Area (Wajib Login & Role Admin) ---
+    // --- Protected Admin Area ---
     Route::middleware(['auth', 'is_admin'])->group(function () {
 
         // Auth Action

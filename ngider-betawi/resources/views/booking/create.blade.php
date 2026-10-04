@@ -101,7 +101,7 @@
 
                     {{-- Nama Instansi / Sekolah --}}
                     <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Nama Instansi / Sekolah / Komunitas</label>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Nama Sekolah</label>
                         <input type="text" name="nama_instansi" value="{{ old('nama_instansi') }}" required placeholder="Contoh: SMP Negeri 49 Jakarta" class="w-full px-4 py-3 text-sm rounded-2xl border border-slate-200 focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500 outline-none hover:border-amber-300 transition-all duration-200">
                     </div>
 
@@ -126,9 +126,6 @@
                             <select name="rentang_umur" class="w-full px-4 py-3 text-sm rounded-2xl border border-slate-200 focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500 outline-none bg-white hover:border-amber-300 transition-all duration-200">
                                 <option value="SD / Madrasah Ibtidaiyah">SD / MI (Anak-anak)</option>
                                 <option value="SMP / MTs">SMP / MTs (Remaja Awal)</option>
-                                <option value="SMA / SMK / MA">SMA / SMK (Remaja)</option>
-                                <option value="Mahasiswa / Komunitas">Mahasiswa / Komunitas / Umum</option>
-                                <option value="Keluarga">Keluarga & Anak-anak</option>
                             </select>
                         </div>
                     </div>
@@ -220,8 +217,8 @@
 
                             {{-- Detail Rekening --}}
                             <div class="text-xs sm:text-sm text-slate-700 space-y-1 bg-white p-3.5 sm:p-4 rounded-2xl border border-amber-100 shadow-xs">
-                                <p class="font-bold text-slate-900">BCA: <span class="font-mono text-amber-700 font-black text-base sm:text-lg select-all ml-1">123-456-7890</span></p>
-                                <p class="text-[11px] sm:text-xs text-slate-500">a.n. <strong>Padepokan Ciliwung Condet</strong></p>
+                                <p class="font-bold text-slate-900">Bank Jago : <span class="font-mono text-amber-700 font-black text-base sm:text-lg select-all ml-1">101326874838 </span></p>
+                                <p class="text-[11px] sm:text-xs text-slate-500">a.n. <strong>Ahmad Rizky</strong></p>
                             </div>
                         </div>
 
@@ -237,7 +234,7 @@
                                         const a = document.createElement('a');
                                         a.style.display = 'none';
                                         a.href = url;
-                                        a.download = 'QRIS-Padepokan-Ciliwung.png';
+                                        a.download = 'QRIS-Pembayaran-Paket-Wisata.png';
                                         document.body.appendChild(a);
                                         a.click();
                                         window.URL.revokeObjectURL(url);

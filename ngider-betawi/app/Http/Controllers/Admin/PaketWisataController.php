@@ -100,6 +100,11 @@ class PaketWisataController extends Controller
     {
         $paket = PaketWisata::findOrFail($id);
 
+        if ($paket->pemesanan()->exists()) {
+            return redirect()->route('admin.pakets.index')
+                ->with('error', 'Paket wisata tidak dapat dihapus karena sudah memiliki pemesanan.');
+        }
+
         if ($paket->gambar && Storage::disk('public')->exists($paket->gambar)) {
             Storage::disk('public')->delete($paket->gambar);
         }
