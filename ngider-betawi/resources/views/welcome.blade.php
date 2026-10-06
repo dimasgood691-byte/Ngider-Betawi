@@ -237,14 +237,12 @@
                             </a>
 
                             {{-- Secondary CTA Button --}}
-                            <a href="#padepokan"
-                                class="inline-flex items-center justify-center px-7 py-3.5 text-sm sm:text-base font-semibold text-emerald-700 bg-emerald-50/80 hover:bg-emerald-100/80 border border-emerald-200/80 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 text-center group">
-                                <span>Jelajahi Padepokan</span>
-                                <svg class="w-4 h-4 ml-2 text-emerald-600 group-hover:translate-y-1 transition-transform duration-200"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
-                                </svg>
+                            <a href="https://drive.google.com/file/d/1M9MysGT2_mJZ3JmCNbUnVQawZHQBgGHT/view?usp=sharing"
+                                target="_blank" rel="noopener noreferrer"
+                                class="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm sm:text-base font-semibold text-emerald-700 bg-emerald-50/80 hover:bg-emerald-100/80 border border-emerald-200/80 rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 text-center group">
+                                <span>Guide Book</span>
+                                <i data-lucide="book-open-check"
+                                    class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-700 shrink-0 group-hover:rotate-6 transition-transform duration-300"></i>
                             </a>
                         </div>
                         {{-- Quick Highlights (Card Style Statis - Responsif 3 Kolom) --}}
@@ -1067,9 +1065,10 @@
                                             class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 font-bold text-lg transition-transform duration-300"
                                             :class="openFaq === 1 ? 'rotate-180 bg-amber-100 text-amber-700' : ''">+</span>
                                     </button>
-                                    <div id="funfact-faq-answer-1"
-                                        style="height: 0; opacity: 0" :aria-hidden="openFaq !== 1"
-                                        :style="openFaq === 1 ? 'height: ' + $el.scrollHeight + 'px; opacity: 1' : 'height: 0px; opacity: 0'"
+                                    <div id="funfact-faq-answer-1" style="height: 0; opacity: 0"
+                                        :aria-hidden="openFaq !== 1"
+                                        :style="openFaq === 1 ? 'height: ' + $el.scrollHeight + 'px; opacity: 1' :
+                                            'height: 0px; opacity: 0'"
                                         class="px-6 pb-6 text-sm text-slate-600 border-t border-slate-100 pt-4 leading-relaxed overflow-hidden transition-[height,opacity] duration-300 ease-in-out">
                                         Sejak dahulu, Kali Ciliwung menjadi pusat kehidupan masyarakat Betawi. Airnya
                                         dimanfaatkan
@@ -1090,9 +1089,10 @@
                                             class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 font-bold text-lg transition-transform duration-300"
                                             :class="openFaq === 2 ? 'rotate-180 bg-amber-100 text-amber-700' : ''">+</span>
                                     </button>
-                                    <div id="funfact-faq-answer-2"
-                                        style="height: 0; opacity: 0" :aria-hidden="openFaq !== 2"
-                                        :style="openFaq === 2 ? 'height: ' + $el.scrollHeight + 'px; opacity: 1' : 'height: 0px; opacity: 0'"
+                                    <div id="funfact-faq-answer-2" style="height: 0; opacity: 0"
+                                        :aria-hidden="openFaq !== 2"
+                                        :style="openFaq === 2 ? 'height: ' + $el.scrollHeight + 'px; opacity: 1' :
+                                            'height: 0px; opacity: 0'"
                                         class="px-6 pb-6 text-sm text-slate-600 border-t border-slate-100 pt-4 leading-relaxed overflow-hidden transition-[height,opacity] duration-300 ease-in-out">
                                         Kembar Aer mengingatkan kita bahwa alam bukan untuk dieksploitasi, melainkan
                                         dirawat bersama.
@@ -1113,9 +1113,10 @@
                                             class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 font-bold text-lg transition-transform duration-300"
                                             :class="openFaq === 3 ? 'rotate-180 bg-amber-100 text-amber-700' : ''">+</span>
                                     </button>
-                                    <div id="funfact-faq-answer-3"
-                                        style="height: 0; opacity: 0" :aria-hidden="openFaq !== 3"
-                                        :style="openFaq === 3 ? 'height: ' + $el.scrollHeight + 'px; opacity: 1' : 'height: 0px; opacity: 0'"
+                                    <div id="funfact-faq-answer-3" style="height: 0; opacity: 0"
+                                        :aria-hidden="openFaq !== 3"
+                                        :style="openFaq === 3 ? 'height: ' + $el.scrollHeight + 'px; opacity: 1' :
+                                            'height: 0px; opacity: 0'"
                                         class="px-6 pb-6 text-sm text-slate-600 border-t border-slate-100 pt-4 leading-relaxed overflow-hidden transition-[height,opacity] duration-300 ease-in-out">
                                         Nama-nama kawasan di Jakarta seperti Kampung Pulo, Kalideres, Rawa Belong,
                                         hingga Cipete
@@ -1134,9 +1135,10 @@
                                             class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 font-bold text-lg transition-transform duration-300"
                                             :class="openFaq === 4 ? 'rotate-180 bg-amber-100 text-amber-700' : ''">+</span>
                                     </button>
-                                    <div id="funfact-faq-answer-4"
-                                        style="height: 0; opacity: 0" :aria-hidden="openFaq !== 4"
-                                        :style="openFaq === 4 ? 'height: ' + $el.scrollHeight + 'px; opacity: 1' : 'height: 0px; opacity: 0'"
+                                    <div id="funfact-faq-answer-4" style="height: 0; opacity: 0"
+                                        :aria-hidden="openFaq !== 4"
+                                        :style="openFaq === 4 ? 'height: ' + $el.scrollHeight + 'px; opacity: 1' :
+                                            'height: 0px; opacity: 0'"
                                         class="px-6 pb-6 text-sm text-slate-600 border-t border-slate-100 pt-4 leading-relaxed overflow-hidden transition-[height,opacity] duration-300 ease-in-out">
                                         <p class="font-medium text-slate-700">Menjaga budaya bisa dimulai dari hal
                                             sederhana:</p>
@@ -1533,7 +1535,8 @@
                     <span class="text-amber-600 font-bold text-xs uppercase tracking-widest block mb-2">Pilihan
                         Kunjungan</span>
                     <h2 class="text-3xl sm:text-4xl font-black text-slate-900">Daftar Paket Wisata Edukasi</h2>
-                    <p class="mt-3 text-slate-600 text-sm sm:text-base">Pilih paket terbaik sesuai kebutuhan rombongan sekolah.</p>
+                    <p class="mt-3 text-slate-600 text-sm sm:text-base">Pilih paket terbaik sesuai kebutuhan rombongan
+                        sekolah.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -1557,15 +1560,14 @@
                                             : asset('storage/' . $p->gambar))
                                         : asset('image-padepokan-1.png');
                                 @endphp
-                                <button type="button"
-                                    @click="bukaDetailPaket(@js([
-                                        'nama' => $p->nama_paket,
-                                        'deskripsi' => $p->deskripsi,
-                                        'harga' => number_format($p->harga, 0, ',', '.'),
-                                        'gambar' => $gambarPaket,
-                                        'aktivitas' => $p->posKegiatan->pluck('nama_pos')->values(),
-                                        'urlPesan' => route('booking.create', $p->id),
-                                    ]), $event)"
+                                <button type="button" @click="bukaDetailPaket(@js([
+    'nama' => $p->nama_paket,
+    'deskripsi' => $p->deskripsi,
+    'harga' => number_format($p->harga, 0, ',', '.'),
+    'gambar' => $gambarPaket,
+    'aktivitas' => $p->posKegiatan->pluck('nama_pos')->values(),
+    'urlPesan' => route('booking.create', $p->id),
+]), $event)"
                                     aria-haspopup="dialog" aria-label="Lihat detail paket {{ $p->nama_paket }}"
                                     class="group/cover relative block w-full overflow-hidden rounded-2xl aspect-video bg-slate-100 shadow-xs border border-slate-200/60 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-amber-500/40">
                                     <img src="{{ $gambarPaket }}" alt=""
@@ -1968,269 +1970,303 @@
                                     <p class="text-xs text-slate-500">Orang Tua Murid</p>
                                 </div>
                             </div>
+                        </div> @endif
+            </div>
+    </div>
+    </section>
+
+    {{-- FAQ Section (Alpine.js) --}}
+    <section id="faq" class="py-20 bg-white" x-data="{ openFaq: null }">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-amber-600 font-bold text-xs uppercase tracking-widest block mb-2">Pertanyaan
+                    Populer</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900">Pertanyaan Sering Diajukan (FAQ)</h2>
+            </div>
+
+            <div class="space-y-4">
+                <div class="border border-slate-200/80 rounded-2xl overflow-hidden transition-all duration-300 hover:border-amber-300 hover:shadow-md"
+                    data-aos="fade-up">
+                    <button type="button" @click="openFaq === 1 ? openFaq = null : openFaq = 1"
+                        :aria-expanded="openFaq === 1" aria-controls="faq-answer-1"
+                        class="w-full p-6 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-amber-50/50 transition duration-200">
+                        <span>Bagaimana cara melakukan pemesanan paket wisata rombongan?</span>
+                        <span
+                            class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 font-bold text-lg transition-transform duration-300"
+                            :class="openFaq === 1 ? 'rotate-180 bg-amber-100 text-amber-700' : ''">+</span>
+                    </button>
+                    <div id="faq-answer-1"
+                        class="overflow-hidden transition-[height,opacity] duration-300 ease-in-out"
+                        style="height: 0; opacity: 0" :aria-hidden="openFaq !== 1"
+                        :style="openFaq === 1 ? 'height: ' + $el.scrollHeight + 'px; opacity: 1' : 'height: 0px; opacity: 0'">
+                        <div class="px-6 pb-6 text-sm text-slate-600 border-t border-slate-100 pt-4 leading-relaxed">
+                            Anda dapat memilih paket di atas lalu klik tombol "Pesan Paket Ini". Tim kami akan membantu
+                            memverifikasi ketersediaan tanggal dan jadwal pemandu.
                         </div>
-                    @endif
+                    </div>
+                </div>
+
+                <div class="border border-slate-200/80 rounded-2xl overflow-hidden transition-all duration-300 hover:border-amber-300 hover:shadow-md"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <button type="button" @click="openFaq === 2 ? openFaq = null : openFaq = 2"
+                        :aria-expanded="openFaq === 2" aria-controls="faq-answer-2"
+                        class="w-full p-6 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-amber-50/50 transition duration-200">
+                        <span>Berapa minimal jumlah peserta untuk reservasi rombongan?</span>
+                        <span
+                            class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 font-bold text-lg transition-transform duration-300"
+                            :class="openFaq === 2 ? 'rotate-180 bg-amber-100 text-amber-700' : ''">+</span>
+                    </button>
+                    <div id="faq-answer-2"
+                        class="overflow-hidden transition-[height,opacity] duration-300 ease-in-out"
+                        style="height: 0; opacity: 0" :aria-hidden="openFaq !== 2"
+                        :style="openFaq === 2 ? 'height: ' + $el.scrollHeight + 'px; opacity: 1' : 'height: 0px; opacity: 0'">
+                        <div class="px-6 pb-6 text-sm text-slate-600 border-t border-slate-100 pt-4 leading-relaxed">
+                            Untuk paket sekolah, minimal kuota kunjungan adalah 20 orang peserta.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-slate-200/80 rounded-2xl overflow-hidden transition-all duration-300 hover:border-amber-300 hover:shadow-md"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <button type="button" @click="openFaq === 3 ? openFaq = null : openFaq = 3"
+                        :aria-expanded="openFaq === 3" aria-controls="faq-answer-3"
+                        class="w-full p-6 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-amber-50/50 transition duration-200">
+                        <span>Apakah lokasi Padepokan aman untuk anak-anak?</span>
+                        <span
+                            class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 font-bold text-lg transition-transform duration-300"
+                            :class="openFaq === 3 ? 'rotate-180 bg-amber-100 text-amber-700' : ''">+</span>
+                    </button>
+                    <div id="faq-answer-3"
+                        class="overflow-hidden transition-[height,opacity] duration-300 ease-in-out"
+                        style="height: 0; opacity: 0" :aria-hidden="openFaq !== 3"
+                        :style="openFaq === 3 ? 'height: ' + $el.scrollHeight + 'px; opacity: 1' : 'height: 0px; opacity: 0'">
+                        <div class="px-6 pb-6 text-sm text-slate-600 border-t border-slate-100 pt-4 leading-relaxed">
+                            Sangat aman. Area kegiatan dilengkapi pagar pengaman, instruktur terlatih, dan perlengkapan
+                            keselamatan standar saat berada di area bantaran sungai.
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        {{-- FAQ Section (Alpine.js) --}}
-        <section id="faq" class="py-20 bg-white" x-data="{ openFaq: null }">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16" data-aos="fade-up">
-                    <span class="text-amber-600 font-bold text-xs uppercase tracking-widest block mb-2">Pertanyaan
-                        Populer</span>
-                    <h2 class="text-3xl sm:text-4xl font-black text-slate-900">Pertanyaan Sering Diajukan (FAQ)</h2>
-                </div>
-
-                <div class="space-y-4">
-                    <div class="border border-slate-200/80 rounded-2xl overflow-hidden transition-all duration-300 hover:border-amber-300 hover:shadow-md"
-                        data-aos="fade-up">
-                        <button type="button" @click="openFaq === 1 ? openFaq = null : openFaq = 1"
-                            :aria-expanded="openFaq === 1" aria-controls="faq-answer-1"
-                            class="w-full p-6 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-amber-50/50 transition duration-200">
-                            <span>Bagaimana cara melakukan pemesanan paket wisata rombongan?</span>
-                            <span
-                                class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 font-bold text-lg transition-transform duration-300"
-                                :class="openFaq === 1 ? 'rotate-180 bg-amber-100 text-amber-700' : ''">+</span>
-                        </button>
-                        <div id="faq-answer-1" class="overflow-hidden transition-[height,opacity] duration-300 ease-in-out"
-                            style="height: 0; opacity: 0" :aria-hidden="openFaq !== 1"
-                            :style="openFaq === 1 ? 'height: ' + $el.scrollHeight + 'px; opacity: 1' : 'height: 0px; opacity: 0'">
-                            <div class="px-6 pb-6 text-sm text-slate-600 border-t border-slate-100 pt-4 leading-relaxed">
-                                Anda dapat memilih paket di atas lalu klik tombol "Pesan Paket Ini". Tim kami akan membantu
-                                memverifikasi ketersediaan tanggal dan jadwal pemandu.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="border border-slate-200/80 rounded-2xl overflow-hidden transition-all duration-300 hover:border-amber-300 hover:shadow-md"
-                        data-aos="fade-up" data-aos-delay="100">
-                        <button type="button" @click="openFaq === 2 ? openFaq = null : openFaq = 2"
-                            :aria-expanded="openFaq === 2" aria-controls="faq-answer-2"
-                            class="w-full p-6 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-amber-50/50 transition duration-200">
-                            <span>Berapa minimal jumlah peserta untuk reservasi rombongan?</span>
-                            <span
-                                class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 font-bold text-lg transition-transform duration-300"
-                                :class="openFaq === 2 ? 'rotate-180 bg-amber-100 text-amber-700' : ''">+</span>
-                        </button>
-                        <div id="faq-answer-2" class="overflow-hidden transition-[height,opacity] duration-300 ease-in-out"
-                            style="height: 0; opacity: 0" :aria-hidden="openFaq !== 2"
-                            :style="openFaq === 2 ? 'height: ' + $el.scrollHeight + 'px; opacity: 1' : 'height: 0px; opacity: 0'">
-                            <div class="px-6 pb-6 text-sm text-slate-600 border-t border-slate-100 pt-4 leading-relaxed">
-                                Untuk paket sekolah, minimal kuota kunjungan adalah 20 orang peserta.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="border border-slate-200/80 rounded-2xl overflow-hidden transition-all duration-300 hover:border-amber-300 hover:shadow-md"
-                        data-aos="fade-up" data-aos-delay="200">
-                        <button type="button" @click="openFaq === 3 ? openFaq = null : openFaq = 3"
-                            :aria-expanded="openFaq === 3" aria-controls="faq-answer-3"
-                            class="w-full p-6 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-amber-50/50 transition duration-200">
-                            <span>Apakah lokasi Padepokan aman untuk anak-anak?</span>
-                            <span
-                                class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 font-bold text-lg transition-transform duration-300"
-                                :class="openFaq === 3 ? 'rotate-180 bg-amber-100 text-amber-700' : ''">+</span>
-                        </button>
-                        <div id="faq-answer-3" class="overflow-hidden transition-[height,opacity] duration-300 ease-in-out"
-                            style="height: 0; opacity: 0" :aria-hidden="openFaq !== 3"
-                            :style="openFaq === 3 ? 'height: ' + $el.scrollHeight + 'px; opacity: 1' : 'height: 0px; opacity: 0'">
-                            <div class="px-6 pb-6 text-sm text-slate-600 border-t border-slate-100 pt-4 leading-relaxed">
-                                Sangat aman. Area kegiatan dilengkapi pagar pengaman, instruktur terlatih, dan perlengkapan
-                                keselamatan standar saat berada di area bantaran sungai.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        {{-- Floating Buttons (Scroll to Top & WhatsApp) --}}
-        <div x-data="{ showTopBtn: false }" x-init="window.addEventListener('scroll', () => { showTopBtn = window.scrollY > 300 })"
-            class="fixed bottom-6 right-6 z-50 flex flex-col gap-3 items-center">
-
-            {{-- Tombol Scroll to Top --}}
-            <button x-show="showTopBtn" x-transition:enter="transition ease-out duration-300"
-                x-transition:enter-start="opacity-0 translate-y-4 scale-90"
-                x-transition:enter-end="opacity-100 translate-y-0 scale-100"
-                x-transition:leave="transition ease-in duration-200"
-                x-transition:leave-start="opacity-100 translate-y-0 scale-100"
-                x-transition:leave-end="opacity-0 translate-y-4 scale-90"
-                @click="window.scrollTo({ top: 0, behavior: 'smooth' })"
-                class="w-12 h-12 rounded-full bg-white text-orange-500 shadow-lg border border-slate-100 flex items-center justify-center hover:bg-slate-50 hover:scale-110 active:scale-95 transition-all duration-300"
-                title="Kembali ke atas">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 stroke-current stroke-[2.5]" fill="none"
-                    viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
-                </svg>
-            </button>
-
-            {{-- Tombol Floating WhatsApp --}}
-            <a href="https://wa.me/6281317068166?text=Halo%20Admin%20Ngider%20Betawi,%20saya%20ingin%20bertanya%20seputar%20paket%20wisata."
-                target="_blank" rel="noopener noreferrer"
-                class="w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-300 relative group"
-                title="Chat via WhatsApp">
-
-                <span
-                    class="absolute -inset-1 rounded-full bg-emerald-400 opacity-75 animate-ping group-hover:opacity-0"></span>
-
-                <svg class="w-7 h-7 fill-current relative z-10" viewBox="0 0 24 24">
-                    <path
-                        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
-                </svg>
-            </a>
         </div>
+    </section>
 
-        {{-- Footer --}}
-        <footer x-data="{ openDevModal: false }"
-            class="bg-gradient-to-b from-emerald-950 to-stone-900 text-stone-300 py-16 border-t border-amber-600/30 relative overflow-hidden">
-            {{-- Aksen Glow Halus di Background --}}
-            <div class="absolute -top-24 -left-24 w-96 h-96 bg-amber-600/5 rounded-full blur-3xl pointer-events-none">
-            </div>
-            <div
-                class="absolute -bottom-24 -right-24 w-96 h-96 bg-emerald-600/5 rounded-full blur-3xl pointer-events-none">
-            </div>
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-                    {{-- Deskripsi Brand --}}
-                    <div class="md:col-span-1 space-y-4">
-                        <div class="flex items-center space-x-3">
-                            <img src="{{ asset('logo-ngiderbetawi.png') }}" alt="Logo Ngider Betawi"
-                                class="w-10 h-10 object-contain">
-                            <span class="text-xl font-black tracking-tight text-white">
-                                Ngider<span class="text-amber-600">Betawi</span>
-                            </span>
-                        </div>
-                        <p class="text-xs sm:text-sm text-stone-400 leading-relaxed font-normal">
-                            Sistem Informasi Wisata Edukasi & Gamifikasi Kebudayaan Betawi di Padepokan Ciliwung Condet.
+    {{-- Floating Buttons (Scroll to Top & WhatsApp) --}}
+    <div x-data="{ showTopBtn: false }" x-init="window.addEventListener('scroll', () => { showTopBtn = window.scrollY > 300 })"
+        class="fixed bottom-6 right-6 z-50 flex flex-col gap-3 items-center">
+
+        {{-- Tombol Scroll to Top --}}
+        <button x-show="showTopBtn" x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 translate-y-4 scale-90"
+            x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+            x-transition:leave="transition ease-in duration-200"
+            x-transition:leave-start="opacity-100 translate-y-0 scale-100"
+            x-transition:leave-end="opacity-0 translate-y-4 scale-90"
+            @click="window.scrollTo({ top: 0, behavior: 'smooth' })"
+            class="w-12 h-12 rounded-full bg-white text-orange-500 shadow-lg border border-slate-100 flex items-center justify-center hover:bg-slate-50 hover:scale-110 active:scale-95 transition-all duration-300"
+            title="Kembali ke atas">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 stroke-current stroke-[2.5]" fill="none"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+            </svg>
+        </button>
+
+        {{-- Tombol Floating WhatsApp --}}
+        <a href="https://wa.me/6281317068166?text=Halo%20Admin%20Ngider%20Betawi,%20saya%20ingin%20bertanya%20seputar%20paket%20wisata."
+            target="_blank" rel="noopener noreferrer"
+            class="w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-300 relative group"
+            title="Chat via WhatsApp">
+
+            <span
+                class="absolute -inset-1 rounded-full bg-emerald-400 opacity-75 animate-ping group-hover:opacity-0"></span>
+
+            <svg class="w-7 h-7 fill-current relative z-10" viewBox="0 0 24 24">
+                <path
+                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+            </svg>
+        </a>
+    </div>
+
+    {{-- Footer --}}
+    <footer x-data="{ openDevModal: false }"
+        class="bg-gradient-to-b from-emerald-950 to-stone-900 text-stone-300 py-16 border-t border-amber-600/30 relative overflow-hidden">
+        {{-- Aksen Glow Halus di Background --}}
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-amber-600/5 rounded-full blur-3xl pointer-events-none">
+        </div>
+        <div
+            class="absolute -bottom-24 -right-24 w-96 h-96 bg-emerald-600/5 rounded-full blur-3xl pointer-events-none">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                {{-- Deskripsi Brand --}}
+                <div class="md:col-span-1 space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <img src="{{ asset('logo-ngiderbetawi.png') }}" alt="Logo Ngider Betawi"
+                            class="w-10 h-10 object-contain">
+                        <span class="text-xl font-black tracking-tight text-white">
+                            Ngider<span class="text-amber-600">Betawi</span>
+                        </span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-stone-400 leading-relaxed font-normal">
+                        Sistem Informasi Wisata Edukasi & Gamifikasi Kebudayaan Betawi di Padepokan Ciliwung Condet.
+                    </p>
+                </div>
+                {{-- Navigasi Cepat --}}
+                <div>
+                    <h4 class="text-amber-600 font-bold text-xs mb-4 uppercase tracking-widest">Navigasi Cepat
+                    </h4>
+                    <ul class="space-y-2 text-xs sm:text-sm text-stone-400">
+                        <li><a href="#beranda" class="hover:text-amber-600 transition-colors duration-200">Beranda</a>
+                        </li>
+                        <li><a href="#ngider-betawi"
+                                class="hover:text-amber-600 transition-colors duration-200">Konsep
+                                Wisata</a></li>
+                        <li><a href="#paket" class="hover:text-amber-600 transition-colors duration-200">Paket
+                                Edukasi</a></li>
+                        <li><a href="#galeri" class="hover:text-amber-600 transition-colors duration-200">Galeri
+                                Suasana</a></li>
+                    </ul>
+                </div>
+                {{-- Kontak & Media Sosial --}}
+                <div class="space-y-3">
+                    <h4 class="text-amber-600 font-bold text-xs mb-4 uppercase tracking-widest">Hubungi Kami</h4>
+                    <ul class="space-y-3 text-xs sm:text-sm text-stone-400">
+                        <li class="flex items-start gap-2.5">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-amber-600/80 shrink-0 mt-0.5"></i>
+                            <span>Padepokan Ciliwung Condet, Balekambang, Kramat Jati, Jakarta Timur.</span>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/6281317068166" target="_blank" rel="noopener noreferrer"
+                                class="flex items-center gap-2.5 hover:text-amber-600 transition-colors duration-200">
+                                <i data-lucide="phone" class="w-4 h-4 text-amber-600/80 shrink-0"></i>
+                                <span>+62 813-1706-8166</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:ngiderbetawi@gmail.com"
+                                class="flex items-center gap-2.5 hover:text-amber-600 transition-colors duration-200">
+                                <i data-lucide="mail" class="w-4 h-4 text-amber-600/80 shrink-0"></i>
+                                <span>ngiderbetawi@gmail.com</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    {{-- Tautan Media Sosial (YouTube & TikTok) --}}
+                    <div class="pt-2">
+                        <p class="text-[11px] font-semibold text-amber-600 uppercase tracking-wider mb-2">Media Sosial
                         </p>
-                    </div>
-                    {{-- Navigasi Cepat --}}
-                    <div>
-                        <h4 class="text-amber-600 font-bold text-xs mb-4 uppercase tracking-widest">Navigasi Cepat
-                        </h4>
-                        <ul class="space-y-2 text-xs sm:text-sm text-stone-400">
-                            <li><a href="#beranda"
-                                    class="hover:text-amber-600 transition-colors duration-200">Beranda</a></li>
-                            <li><a href="#ngider-betawi"
-                                    class="hover:text-amber-600 transition-colors duration-200">Konsep
-                                    Wisata</a></li>
-                            <li><a href="#paket" class="hover:text-amber-600 transition-colors duration-200">Paket
-                                    Edukasi</a></li>
-                            <li><a href="#galeri" class="hover:text-amber-600 transition-colors duration-200">Galeri
-                                    Suasana</a></li>
-                        </ul>
-                    </div>
-                    {{-- Kontak & Media Sosial --}}
-                    <div class="space-y-3">
-                        <h4 class="text-amber-600 font-bold text-xs mb-4 uppercase tracking-widest">Hubungi Kami</h4>
-                        <ul class="space-y-3 text-xs sm:text-sm text-stone-400">
-                            <li class="flex items-start gap-2.5">
-                                <i data-lucide="map-pin" class="w-4 h-4 text-amber-600/80 shrink-0 mt-0.5"></i>
-                                <span>Padepokan Ciliwung Condet, Balekambang, Kramat Jati, Jakarta Timur.</span>
-                            </li>
-                            <li>
-                                <a href="https://wa.me/6281317068166" target="_blank"
-                                    class="flex items-center gap-2.5 hover:text-amber-600 transition-colors duration-200">
-                                    <i data-lucide="phone" class="w-4 h-4 text-amber-600/80 shrink-0"></i>
-                                    <span>+62 813-1706-8166</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:info@ngiderbetawi.id"
-                                    class="flex items-center gap-2.5 hover:text-amber-600 transition-colors duration-200">
-                                    <i data-lucide="mail" class="w-4 h-4 text-amber-600/80 shrink-0"></i>
-                                    <span>ngiderbetawi@gmail.com</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    {{-- Lokasi Peta --}}
-                    <div>
-                        <h4 class="text-amber-600 font-bold text-xs mb-4 uppercase tracking-widest">Lokasi Peta</h4>
-                        <div
-                            class="w-full h-36 rounded-xl overflow-hidden border border-stone-800 shadow-inner relative">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.867702816962!2d106.8529241!3d-6.2811105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f2f3cb065d6d%3A0xb3ef1ad0952d9a65!2sPadepokan%20Ciliwung%20Condet!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
-                                class="w-full h-full border-0 opacity-90 hover:opacity-100 transition-opacity duration-300"
-                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                        </div>
-                    </div>
-                </div>
-                {{-- Bottom Copyright & Tombol Tim Developer --}}
-                <div
-                    class="pt-8 border-t border-stone-800/80 text-xs text-stone-500 flex flex-col sm:flex-row justify-between items-center gap-3">
-                    <p>&copy; {{ date('Y') }} NgiderBetawi - Padepokan Ciliwung Condet.</p>
-                    <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
-                        {{-- Tombol Identitas Tim Developer --}}
-                        <button type="button" @click="openDevModal = true"
-                            class="inline-flex items-center gap-1.5 text-xs text-amber-500/80 hover:text-amber-400 bg-amber-500/10 hover:bg-amber-500/20 px-3 py-1.5 rounded-lg border border-amber-500/20 transition-all duration-200 active:scale-95">
-                            <i data-lucide="code-2" class="w-3.5 h-3.5"></i>
-                            <span>Tim Developer</span>
-                        </button>
-                        <p class="text-stone-400 font-medium hidden sm:block">Wisata Edukasi & Budaya Betawi</p>
-                    </div>
-                </div>
-            </div>
-            {{-- Modal Pop-up Tim Developer --}}
-            <div x-show="openDevModal" x-transition:enter="transition ease-out duration-300"
-                x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
-                x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100"
-                x-transition:leave-end="opacity-0" x-cloak
-                class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm"
-                @keydown.escape.window="openDevModal = false">
-                <div @click.away="openDevModal = false"
-                    class="bg-stone-900 border border-amber-600/30 rounded-2xl p-6 max-w-md w-full shadow-2xl space-y-5 relative">
-                    {{-- Header Modal --}}
-                    <div class="flex justify-between items-center border-b border-stone-800 pb-3">
-                        <div class="flex items-center gap-2">
-                            <i data-lucide="code-2" class="w-5 h-5 text-amber-500"></i>
-                            <h3 class="text-base font-bold text-white">Tim Developer</h3>
-                        </div>
-                        <button @click="openDevModal = false"
-                            class="text-stone-400 hover:text-white transition-colors">
-                            <i data-lucide="x" class="w-5 h-5"></i>
-                        </button>
-                    </div>
-                    {{-- List Pengembang --}}
-                    <div class="space-y-3">
-                        <p class="text-xs text-stone-400">Sistem "Ngider Betawi" dikembangkan dengan bangga oleh:</p>
-                        <div class="space-y-2">
-                            {{-- Anggota 1 --}}
-                            <a href="https://github.com/dimasgood691-byte" target="_blank"
-                                rel="noopener noreferrer"
-                                class="flex items-center gap-3 p-2.5 rounded-xl bg-stone-800/50 border border-stone-800 hover:border-amber-500/50 hover:bg-stone-800 transition-all duration-200 group">
-                                <div class="flex-1 min-w-0">
-                                    <p
-                                        class="text-xs font-bold text-stone-200 group-hover:text-amber-400 transition-colors truncate">
-                                        Dimas Putra Madiadipura
-                                    </p>
-                                    <p class="text-[11px] text-stone-400 truncate">Fullstack / Lead Developer</p>
-                                </div>
-                                <i data-lucide="github"
-                                    class="w-4 h-4 text-stone-500 group-hover:text-amber-400 transition-colors shrink-0"></i>
+                        <div class="flex items-center gap-3">
+                            {{-- Instagram SVG --}}
+                            <a href="https://www.instagram.com/ngiderbetawi" target="_blank"
+                                rel="noopener noreferrer" title="Instagram Ngider Betawi"
+                                class="flex items-center justify-center w-8 h-8 rounded-lg bg-stone-800/80 border border-stone-700/60 text-stone-400 hover:text-pink-500 hover:bg-pink-500/10 hover:border-pink-500/40 transition-all duration-200">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </a>
+                            {{-- YouTube --}}
+                            <a href="https://www.youtube.com/@ngiderbetawi" target="_blank" rel="noopener noreferrer"
+                                title="YouTube Ngider Betawi"
+                                class="flex items-center justify-center w-8 h-8 rounded-lg bg-stone-800/80 border border-stone-700/60 text-stone-400 hover:text-red-500 hover:bg-red-500/10 hover:border-red-500/40 transition-all duration-200">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                                </svg>
                             </a>
 
-                            {{-- Anggota 2 --}}
-                            <a href="https://github.com/username-anggota-2" target="_blank"
-                                rel="noopener noreferrer"
-                                class="flex items-center gap-3 p-2.5 rounded-xl bg-stone-800/50 border border-stone-800 hover:border-amber-500/50 hover:bg-stone-800 transition-all duration-200 group">
-                                <div class="flex-1 min-w-0">
-                                    <p
-                                        class="text-xs font-bold text-stone-200 group-hover:text-amber-400 transition-colors truncate">
-                                        Weinbrecht Halawa
-                                    </p>
-                                    <p class="text-[11px] text-stone-400 truncate">UI/UX Designer & Data Analyst</p>
-                                </div>
-                                <i data-lucide="github"
-                                    class="w-4 h-4 text-stone-500 group-hover:text-emerald-400 transition-colors shrink-0"></i>
+                            {{-- TikTok --}}
+                            <a href="https://www.tiktok.com/@ngiderbetawi" target="_blank" rel="noopener noreferrer"
+                                title="TikTok Ngider Betawi"
+                                class="flex items-center justify-center w-8 h-8 rounded-lg bg-stone-800/80 border border-stone-700/60 text-stone-400 hover:text-cyan-400 hover:bg-cyan-500/10 hover:border-cyan-500/40 transition-all duration-200">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.98-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.82.56-1.29 1.57-1.18 2.56.09.96.72 1.82 1.63 2.15 1.05.39 2.29.13 3.08-.62.62-.57.97-1.39.99-2.23.04-5.27.02-10.53.03-15.8z" />
+                                </svg>
                             </a>
                         </div>
                     </div>
                 </div>
+                {{-- Lokasi Peta --}}
+                <div>
+                    <h4 class="text-amber-600 font-bold text-xs mb-4 uppercase tracking-widest">Lokasi Peta</h4>
+                    <div class="w-full h-36 rounded-xl overflow-hidden border border-stone-800 shadow-inner relative">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.867702816962!2d106.8529241!3d-6.2811105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f2f3cb065d6d%3A0xb3ef1ad0952d9a65!2sPadepokan%20Ciliwung%20Condet!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+                            class="w-full h-full border-0 opacity-90 hover:opacity-100 transition-opacity duration-300"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
             </div>
-        </footer>
+            {{-- Bottom Copyright & Tombol Tim Developer --}}
+            <div
+                class="pt-8 border-t border-stone-800/80 text-xs text-stone-500 flex flex-col sm:flex-row justify-between items-center gap-3">
+                <p>&copy; {{ date('Y') }} NgiderBetawi - Padepokan Ciliwung Condet.</p>
+                <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
+                    {{-- Tombol Identitas Tim Developer --}}
+                    <button type="button" @click="openDevModal = true"
+                        class="inline-flex items-center gap-1.5 text-xs text-amber-500/80 hover:text-amber-400 bg-amber-500/10 hover:bg-amber-500/20 px-3 py-1.5 rounded-lg border border-amber-500/20 transition-all duration-200 active:scale-95">
+                        <i data-lucide="code-2" class="w-3.5 h-3.5"></i>
+                        <span>Tim Developer</span>
+                    </button>
+                    <p class="text-stone-400 font-medium hidden sm:block">Wisata Edukasi & Budaya Betawi</p>
+                </div>
+            </div>
+        </div>
+        {{-- Modal Pop-up Tim Developer --}}
+        <div x-show="openDevModal" x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+            x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100"
+            x-transition:leave-end="opacity-0" x-cloak
+            class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm"
+            @keydown.escape.window="openDevModal = false">
+            <div @click.away="openDevModal = false"
+                class="bg-stone-900 border border-amber-600/30 rounded-2xl p-6 max-w-md w-full shadow-2xl space-y-5 relative">
+                {{-- Header Modal --}}
+                <div class="flex justify-between items-center border-b border-stone-800 pb-3">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="code-2" class="w-5 h-5 text-amber-500"></i>
+                        <h3 class="text-base font-bold text-white">Tim Developer</h3>
+                    </div>
+                    <button @click="openDevModal = false" class="text-stone-400 hover:text-white transition-colors">
+                        <i data-lucide="x" class="w-5 h-5"></i>
+                    </button>
+                </div>
+                {{-- List Pengembang --}}
+                <div class="space-y-3">
+                    <p class="text-xs text-stone-400">Sistem "Ngider Betawi" dikembangkan dengan bangga oleh:</p>
+                    <div class="space-y-2">
+                        {{-- Anggota 1 --}}
+                        <a href="https://github.com/dimasgood691-byte" target="_blank" rel="noopener noreferrer"
+                            class="flex items-center gap-3 p-2.5 rounded-xl bg-stone-800/50 border border-stone-800 hover:border-amber-500/50 hover:bg-stone-800 transition-all duration-200 group">
+                            <div class="flex-1 min-w-0">
+                                <p
+                                    class="text-xs font-bold text-stone-200 group-hover:text-amber-400 transition-colors truncate">
+                                    Dimas Putra Madiadipura
+                                </p>
+                                <p class="text-[11px] text-stone-400 truncate">Fullstack / Lead Developer</p>
+                            </div>
+                            <i data-lucide="github"
+                                class="w-4 h-4 text-stone-500 group-hover:text-amber-400 transition-colors shrink-0"></i>
+                        </a>
+
+                        {{-- Anggota 2 --}}
+                        <a href="https://github.com/username-anggota-2" target="_blank" rel="noopener noreferrer"
+                            class="flex items-center gap-3 p-2.5 rounded-xl bg-stone-800/50 border border-stone-800 hover:border-amber-500/50 hover:bg-stone-800 transition-all duration-200 group">
+                            <div class="flex-1 min-w-0">
+                                <p
+                                    class="text-xs font-bold text-stone-200 group-hover:text-amber-400 transition-colors truncate">
+                                    Weinbrecht Halawa
+                                </p>
+                                <p class="text-[11px] text-stone-400 truncate">UI/UX Designer & Data Analyst</p>
+                            </div>
+                            <i data-lucide="github"
+                                class="w-4 h-4 text-stone-500 group-hover:text-emerald-400 transition-colors shrink-0"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     </div>
 </x-layouts.app>

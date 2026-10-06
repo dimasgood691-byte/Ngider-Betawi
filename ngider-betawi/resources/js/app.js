@@ -13,7 +13,7 @@ Alpine.start();
 // Initialize AOS (Animate On Scroll)
 document.addEventListener('DOMContentLoaded', () => {
     AOS.init({
-        duration: 700,
+        duration: 400,
         once: true,
         easing: 'ease-in-out',
     });
