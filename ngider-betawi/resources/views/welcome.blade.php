@@ -37,7 +37,6 @@
                     {{-- Logo --}}
                     <a href="#" class="flex items-center space-x-3 group" data-aos="fade-right"
                         data-aos-delay="100">
-                        {{-- Gambar Logo dari public/assets --}}
                         <div
                             class="relative overflow-hidden rounded-2xl p-0.5 group-hover:scale-105 transition-transform duration-300">
                             <img src="{{ asset('logo-ngiderbetawi.png') }}" alt="Logo Ngider Betawi"
@@ -199,7 +198,6 @@
         {{-- Hero Section --}}
         <section id="beranda"
             class="relative bg-gradient-to-b from-amber-50 via-orange-50/50 to-white py-16 lg:py-24 overflow-hidden">
-            {{-- Ambient Glowing Background Orbs --}}
             <div
                 class="absolute -top-24 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-amber-300/20 to-orange-300/20 rounded-full blur-3xl pointer-events-none animate-pulse">
             </div>
@@ -245,10 +243,9 @@
                                     class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-700 shrink-0 group-hover:rotate-6 transition-transform duration-300"></i>
                             </a>
                         </div>
-                        {{-- Quick Highlights (Card Style Statis - Responsif 3 Kolom) --}}
+                        {{-- Quick Highlights --}}
                         <div class="pt-6 grid grid-cols-3 gap-2 sm:gap-3.5 max-w-lg mx-auto lg:mx-0"
                             data-aos="fade-up" data-aos-delay="300">
-                            {{-- Card 1: Pengunjung --}}
                             <div class="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-gradient-to-br from-amber-50/90 via-orange-50/40 to-amber-50/80 backdrop-blur-md border border-amber-200/70 shadow-xs hover:shadow-lg hover:border-amber-300 hover:ring-2 hover:ring-amber-400/40 hover:-translate-y-1 transition-all duration-300 group text-center sm:text-left"
                                 data-aos="zoom-in" data-aos-delay="350">
                                 <div class="flex items-center justify-center sm:justify-start gap-1">
@@ -262,7 +259,6 @@
                                 <p class="text-[10px] sm:text-xs text-slate-600 font-semibold mt-0.5 sm:mt-1 truncate">
                                     Pengunjung</p>
                             </div>
-                            {{-- Card 2: Aktivitas --}}
                             <div class="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-gradient-to-br from-amber-50/90 via-orange-50/40 to-amber-50/80 backdrop-blur-md border border-amber-200/70 shadow-xs hover:shadow-lg hover:border-amber-300 hover:ring-2 hover:ring-amber-400/40 hover:-translate-y-1 transition-all duration-300 group text-center sm:text-left"
                                 data-aos="zoom-in" data-aos-delay="450">
                                 <div class="flex items-center justify-center sm:justify-start gap-1">
@@ -276,7 +272,6 @@
                                 <p class="text-[10px] sm:text-xs text-slate-600 font-semibold mt-0.5 sm:mt-1 truncate">
                                     Aktivitas Seru</p>
                             </div>
-                            {{-- Card 3: Rating --}}
                             <div class="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-gradient-to-br from-amber-50/90 via-orange-50/40 to-amber-50/80 backdrop-blur-md border border-amber-200/70 shadow-xs hover:shadow-lg hover:border-amber-300 hover:ring-2 hover:ring-amber-400/40 hover:-translate-y-1 transition-all duration-300 group text-center sm:text-left"
                                 data-aos="zoom-in" data-aos-delay="550">
                                 <div class="flex items-center justify-center sm:justify-start gap-1">
@@ -295,13 +290,11 @@
 
                     {{-- Right Hero Image Grid --}}
                     <div class="relative group/grid" data-aos="fade-left" data-aos-delay="150">
-                        {{-- Decorative Background Blur --}}
                         <div
                             class="absolute -inset-4 bg-gradient-to-r from-amber-400/20 to-orange-400/20 rounded-full blur-2xl opacity-50 group-hover/grid:opacity-80 transition-opacity duration-500">
                         </div>
 
                         <div class="relative grid grid-cols-2 gap-4" data-aos="zoom-in" data-aos-delay="250">
-                            {{-- Image 1 --}}
                             <div class="relative w-full h-full min-h-[256px] overflow-hidden rounded-3xl shadow-xl border-4 border-white transform -rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-500 group/img1"
                                 data-aos="fade-right" data-aos-delay="300">
                                 <img src="{{ asset('image-beranda-1.png') }}" alt="Wisata Edukasi Ngider Betawi 1"
@@ -311,7 +304,6 @@
                                 </div>
                             </div>
 
-                            {{-- Image 2 --}}
                             <div class="relative overflow-hidden rounded-3xl shadow-xl border-4 border-white transform rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-500 mt-8 group/img2"
                                 data-aos="fade-left" data-aos-delay="400">
                                 <img src="{{ asset('image-beranda-2.png') }}" alt="Wisata Edukasi Ngider Betawi 2"
@@ -322,7 +314,6 @@
                             </div>
                         </div>
 
-                        {{-- Floating Glassmorphism Badge --}}
                         <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-md px-5 py-3 rounded-2xl shadow-xl border border-amber-200/80 flex items-center gap-3.5 w-max hover:scale-105 transition-all duration-300 cursor-default group/badge hover:shadow-2xl hover:border-amber-300"
                             data-aos="fade-up" data-aos-delay="500">
                             <div
@@ -344,18 +335,14 @@
             </div>
         </section>
 
-        {{-- Betawi Section Divider: Wave & Gigi Balang Accent --}}
+        {{-- Betawi Section Divider --}}
         <div class="relative w-full overflow-hidden leading-none py-4 my-6 group/divider">
-            {{-- Decorative Background Line --}}
             <div class="absolute inset-0 flex items-center" aria-hidden="true">
                 <div class="w-full border-t border-dashed border-amber-300/80"></div>
             </div>
-
-            {{-- Center Badge with Gigi Balang Pattern --}}
             <div class="relative flex justify-center">
                 <div
                     class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-700 text-amber-300 border-2 border-amber-400 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
-                    {{-- Gigi Balang Pattern SVG --}}
                     <svg class="w-12 h-3 text-amber-300 fill-current" viewBox="0 0 120 20">
                         <polygon points="0,0 20,0 10,20" />
                         <polygon points="25,0 45,0 35,20" />
@@ -379,7 +366,6 @@
         {{-- Tentang Padepokan Section --}}
         <section id="padepokan" class="py-20 bg-white relative">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                {{-- Section Header --}}
                 <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
                     <span class="text-amber-600 font-bold text-xs uppercase tracking-widest block mb-2">Tentang
                         Padepokan</span>
@@ -388,20 +374,14 @@
                     </h2>
                 </div>
 
-                {{-- Main Layout: Left Media & Right Cards --}}
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-
-                    {{-- Left Column: Images & Location Badge --}}
                     <div class="lg:col-span-5 space-y-4" data-aos="fade-right">
-                        {{-- Main Image --}}
                         <div class="relative overflow-hidden rounded-3xl shadow-md border-4 border-amber-50 group">
                             <img src="{{ asset('image-padepokan-1.png') }}" alt="Padepokan Ciliwung Condet 1"
                                 class="w-full h-72 sm:h-80 object-cover group-hover:scale-108 transition-transform duration-700 ease-out">
-                            {{-- Gradient Overlay --}}
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
-                            {{-- Glassmorphism Badge dengan Lucide Icon --}}
                             <div
                                 class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
                                 <div
@@ -413,15 +393,12 @@
                             </div>
                         </div>
 
-                        {{-- Secondary Image --}}
                         <div class="relative overflow-hidden rounded-3xl shadow-md border-4 border-amber-50 group">
                             <img src="{{ asset('image-padepokan-2.png') }}" alt="Padepokan Ciliwung Condet 2"
                                 class="w-full h-48 object-cover group-hover:scale-108 transition-transform duration-700 ease-out">
-                            {{-- Gradient Overlay --}}
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             </div>
-                            {{-- Glassmorphism Badge dengan Lucide Icon --}}
                             <div
                                 class="absolute bottom-3 left-3 text-white opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
                                 <div
@@ -432,11 +409,9 @@
                             </div>
                         </div>
 
-                        {{-- Location Box Interaktif --}}
                         <div
                             class="p-5 rounded-2xl bg-gradient-to-br from-amber-50/90 to-orange-50/50 border border-amber-200/80 shadow-xs hover:shadow-lg hover:border-amber-300 transition-all duration-300 group">
                             <div class="flex items-start gap-3.5">
-                                {{-- Animated Icon Pin --}}
                                 <div
                                     class="p-3 bg-amber-600 text-white rounded-xl shrink-0 shadow-md shadow-amber-600/20 group-hover:scale-110 group-hover:bg-amber-500 transition-all duration-300">
                                     <svg class="w-5 h-5 group-hover:animate-bounce" fill="none"
@@ -448,7 +423,6 @@
                                     </svg>
                                 </div>
 
-                                {{-- Content Area --}}
                                 <div class="space-y-2">
                                     <div class="flex items-center justify-between gap-2">
                                         <span class="text-xs font-bold uppercase tracking-wider text-amber-700">Lokasi
@@ -459,7 +433,6 @@
                                         Jl. H. Mursali No.99 B, RT.8/RW.1, Balekambang, Kec. Kramat Jati, Kota Jakarta
                                         Timur, Daerah Khusus Ibukota Jakarta 13530
                                     </p>
-                                    {{-- Interactive Link to Google Maps --}}
                                     <a href="https://maps.google.com/?q=Padepokan+Ciliwung+Condet" target="_blank"
                                         rel="noopener noreferrer"
                                         class="inline-flex items-center text-xs font-bold text-amber-600 hover:text-amber-700 pt-1 transition-colors group/link">
@@ -476,9 +449,7 @@
                         </div>
                     </div>
 
-                    {{-- Right Column: Paragraph & Feature Cards --}}
                     <div class="lg:col-span-7 space-y-6" data-aos="fade-left">
-                        {{-- Introduction Card --}}
                         <div
                             class="p-6 sm:p-7 rounded-3xl bg-amber-50/40 border border-amber-200/60 shadow-xs hover:shadow-md hover:border-amber-300/80 transition-all duration-300">
                             <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
@@ -490,7 +461,6 @@
                             </p>
                         </div>
 
-                        {{-- Feature Card 1: Kegiatan yang Diselenggarakan --}}
                         <div
                             class="p-6 sm:p-7 rounded-3xl bg-gradient-to-br from-white via-amber-50/30 to-white backdrop-blur-md border border-amber-200/70 shadow-xs hover:shadow-xl hover:shadow-amber-500/10 hover:border-amber-300 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden">
                             <div class="flex items-center gap-3 mb-4">
@@ -507,7 +477,6 @@
                                 pembelajaran seni, budaya, serta ruang berkumpul masyarakat:
                             </p>
 
-                            {{-- Interactive Tags --}}
                             <div class="flex flex-wrap gap-2">
                                 <span
                                     class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200/80 rounded-xl hover:bg-amber-100 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer">
@@ -541,7 +510,6 @@
                             </div>
                         </div>
 
-                        {{-- Feature Card 2: Dampak Positif --}}
                         <div
                             class="p-6 sm:p-7 rounded-3xl bg-gradient-to-br from-white via-emerald-50/20 to-white backdrop-blur-md border border-amber-200/70 shadow-xs hover:shadow-xl hover:shadow-emerald-500/10 hover:border-amber-300 hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden">
                             <div class="flex items-center gap-3 mb-4">
@@ -577,7 +545,6 @@
                             </div>
                         </div>
 
-                        {{-- Highlight Banner Card: Community Tourism --}}
                         <div
                             class="p-6 rounded-3xl bg-gradient-to-br from-amber-600 via-orange-500 to-amber-700 text-white shadow-xl shadow-amber-600/20 hover:scale-[1.01] hover:shadow-2xl transition-all duration-300 flex items-center gap-4 group">
                             <div
@@ -600,18 +567,14 @@
             </div>
         </section>
 
-        {{-- Betawi Section Divider: Wave & Gigi Balang Accent --}}
+        {{-- Betawi Section Divider --}}
         <div class="relative w-full overflow-hidden leading-none py-4 my-6">
-            {{-- Decorative Background Line --}}
             <div class="absolute inset-0 flex items-center" aria-hidden="true">
                 <div class="w-full border-t border-dashed border-amber-300/80"></div>
             </div>
-
-            {{-- Center Badge with Gigi Balang Pattern --}}
             <div class="relative flex justify-center">
                 <div
                     class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-700 text-amber-300 border-2 border-amber-400 shadow-md">
-                    {{-- Gigi Balang Pattern SVG --}}
                     <svg class="w-12 h-3 text-amber-300 fill-current" viewBox="0 0 120 20">
                         <polygon points="0,0 20,0 10,20" />
                         <polygon points="25,0 45,0 35,20" />
@@ -634,7 +597,6 @@
         {{-- Tentang Ngider Betawi Section --}}
         <section id="ngider-betawi"
             class="relative py-16 bg-gradient-to-b from-amber-50/50 via-white to-amber-50/30 overflow-hidden">
-            {{-- Background Decorative Glows --}}
             <div class="absolute top-1/4 -left-32 w-96 h-96 bg-amber-300/20 rounded-full blur-3xl pointer-events-none">
             </div>
             <div
@@ -642,7 +604,6 @@
             </div>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20 relative z-10">
 
-                {{-- SECTION HERO / HEADER --}}
                 <div class="text-center max-w-2xl mx-auto space-y-3" data-aos="fade-up">
                     <span class="text-amber-600 font-bold text-xs uppercase tracking-widest block mb-2">Tentang Ngider
                         Betawi</span>
@@ -658,10 +619,8 @@
                     </p>
                 </div>
 
-
                 {{-- I. LATAR BELAKANG NGIDER BETAWI --}}
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                    {{-- Quote & Challenge Card --}}
                     <div class="lg:col-span-5 flex flex-col justify-between p-8 rounded-3xl bg-gradient-to-br from-amber-600 via-orange-600 to-amber-700 text-white shadow-xl shadow-amber-600/20 relative overflow-hidden group"
                         data-aos="fade-right">
                         <div class="w-fit animate-bounce">
@@ -688,10 +647,9 @@
                             </div>
                         </div>
                     </div>
-                    {{-- Narrative Content Card --}}
+
                     <div class="lg:col-span-7 p-6 sm:p-8 rounded-3xl bg-white border border-amber-200/80 shadow-xs hover:shadow-xl transition-all duration-300 space-y-5"
                         data-aos="fade-left">
-                        {{-- Header & Text Group --}}
                         <div class="space-y-3">
                             <div
                                 class="flex items-center gap-2 text-amber-700 font-extrabold text-xs tracking-wider uppercase">
@@ -713,7 +671,6 @@
                             </p>
                         </div>
 
-                        {{-- Key Value Pill Badges --}}
                         <div class="pt-4 border-t border-slate-100 space-y-2">
                             <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Nilai Utama Kegiatan
                             </p>
@@ -738,8 +695,7 @@
                     </div>
                 </div>
 
-
-                {{-- II. KEGIATAN NGIDER BETAWI (THE CULTURAL QUEST) --}}
+                {{-- II. KEGIATAN NGIDER BETAWI --}}
                 <div class="space-y-10">
                     <div class="text-center max-w-2xl mx-auto space-y-2" data-aos="fade-up">
                         <div
@@ -752,7 +708,6 @@
                             Pelestari Budaya Betawi!</p>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {{-- Pembukaan Misi --}}
                         <div class="p-6 rounded-3xl bg-gradient-to-br from-white via-amber-50/25 to-white backdrop-blur-md border border-amber-200/70 shadow-xs hover:shadow-xl hover:shadow-amber-500/10 hover:border-amber-300 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden"
                             data-aos="fade-up">
                             <div class="space-y-4">
@@ -762,7 +717,6 @@
                                         Titik Awal
                                     </span>
                                 </div>
-                                {{-- Image Dokumentasi Pembukaan --}}
                                 <div
                                     class="relative overflow-hidden rounded-2xl aspect-video bg-slate-100 border border-slate-100">
                                     <img src="{{ asset('image-misi-pembukaan.png') }}" alt="Pembukaan Misi & Nyahi"
@@ -775,13 +729,10 @@
                                 </div>
                                 <p class="text-slate-600 text-xs leading-relaxed">
                                     Petualangan dimulai di Padepokan Ciliwung Condet. Di sini, kamu bukan sekadar
-                                    peserta wisata,
-                                    melainkan Agen Pelestari Budaya Betawi yang memiliki misi untuk diselesaikan. Setiap
-                                    peserta akan
-                                    menerima Kartu Misi yang akan menemani perjalanan dari awal hingga akhir. Sebelum
-                                    memulai petualangan,
-                                    kamu juga akan mengikuti tradisi Nyahi, yaitu sarapan bersama menggunakan hidangan
-                                    khas Betawi seperti kue
+                                    peserta wisata, melainkan Agen Pelestari Budaya Betawi yang memiliki misi untuk
+                                    diselesaikan. Setiap peserta akan menerima Kartu Misi yang akan menemani perjalanan
+                                    dari awal hingga akhir. Sebelum memulai petualangan, kamu juga akan mengikuti
+                                    tradisi Nyahi, yaitu sarapan bersama menggunakan hidangan khas Betawi seperti kue
                                     cucur atau uli bakar.
                                 </p>
                             </div>
@@ -792,7 +743,6 @@
                             </div>
                         </div>
 
-                        {{-- Pos 1 --}}
                         <div class="p-6 rounded-3xl bg-gradient-to-br from-white via-amber-50/25 to-white backdrop-blur-md border border-amber-200/70 shadow-xs hover:shadow-xl hover:shadow-amber-500/10 hover:border-amber-300 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden"
                             data-aos="fade-up" data-aos-delay="100">
                             <div class="space-y-4">
@@ -802,7 +752,6 @@
                                         Pos 1
                                     </span>
                                 </div>
-                                {{-- Image Dokumentasi Pos 1 --}}
                                 <div
                                     class="relative overflow-hidden rounded-2xl aspect-video bg-slate-100 border border-slate-100">
                                     <img src="{{ asset('image-misi-marawis.png') }}" alt="Menabuh Harmoni Marawis"
@@ -815,12 +764,10 @@
                                 </div>
                                 <p class="text-slate-600 text-xs leading-relaxed">
                                     Bersama seniman dari Padepokan Ciliwung Condet, kamu akan mengenal sejarah, fungsi
-                                    sosial,
-                                    dan filosofi marawis sebagai kesenian yang lahir dari pertemuan budaya Arab, Melayu,
-                                    dan Betawi.
-                                    Setelah memahami ceritanya, saatnya mencoba memainkan marawis secara langsung. Irama
-                                    demi irama dimainkan
-                                    bersama hingga tercipta harmoni yang hanya bisa dibangun melalui kerja sama.
+                                    sosial, dan filosofi marawis sebagai kesenian yang lahir dari pertemuan budaya Arab,
+                                    Melayu, dan Betawi. Setelah memahami ceritanya, saatnya mencoba memainkan marawis
+                                    secara langsung. Irama demi irama dimainkan bersama hingga tercipta harmoni yang
+                                    hanya bisa dibangun melalui kerja sama.
                                 </p>
                             </div>
                             <div
@@ -833,7 +780,6 @@
                             </div>
                         </div>
 
-                        {{-- Pos 2 --}}
                         <div class="p-6 rounded-3xl bg-gradient-to-br from-white via-amber-50/25 to-white backdrop-blur-md border border-amber-200/70 shadow-xs hover:shadow-xl hover:shadow-amber-500/10 hover:border-amber-300 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden"
                             data-aos="fade-up" data-aos-delay="200">
                             <div class="space-y-4">
@@ -843,7 +789,6 @@
                                         Pos 2
                                     </span>
                                 </div>
-                                {{-- Image Dokumentasi Pos 2 --}}
                                 <div
                                     class="relative overflow-hidden rounded-2xl aspect-video bg-slate-100 border border-slate-100">
                                     <img src="{{ asset('image-misi-topeng.png') }}" alt="Makna Dibalik Topeng Betawi"
@@ -857,11 +802,9 @@
                                 <p class="text-slate-600 text-xs leading-relaxed">
                                     Di pos ini, peserta diajak memahami filosofi warna dan karakter Topeng Betawi, mulai
                                     dari merah yang melambangkan keberanian, putih yang mencerminkan kesucian, hingga
-                                    warna-warna
-                                    lain yang menggambarkan berbagai sifat manusia. Setelah memahami maknanya, kamu akan
-                                    melukis topeng
-                                    kosong sesuai kreativitasmu — menjadi suvenir yang membawa pulang cerita tentang
-                                    budaya Betawi.
+                                    warna-warna lain yang menggambarkan berbagai sifat manusia. Setelah memahami
+                                    maknanya, kamu akan melukis topeng kosong sesuai kreativitasmu — menjadi suvenir
+                                    yang membawa pulang cerita tentang budaya Betawi.
                                 </p>
                             </div>
                             <div
@@ -874,7 +817,6 @@
                             </div>
                         </div>
 
-                        {{-- Pos 3 --}}
                         <div
                             class="p-6 rounded-3xl bg-gradient-to-br from-white via-emerald-50/25 to-white backdrop-blur-md border border-amber-200/70 shadow-xs hover:shadow-xl hover:shadow-emerald-500/10 hover:border-amber-300 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group md:col-span-2 lg:col-span-2 relative overflow-hidden">
                             <div class="space-y-4">
@@ -884,7 +826,6 @@
                                         Pos 3 (Puncak Misi)
                                     </span>
                                 </div>
-                                {{-- Image Dokumentasi Pos 3 (Aksi Konservasi) --}}
                                 <div
                                     class="relative overflow-hidden rounded-2xl aspect-video sm:aspect-[21/9] bg-slate-100 border border-slate-100">
                                     <img src="{{ asset('image-misi-kaliciliwung.png') }}"
@@ -926,7 +867,6 @@
                             </div>
                         </div>
 
-                        {{-- Penutupan --}}
                         <div class="p-6 rounded-3xl bg-gradient-to-br from-amber-50/90 via-orange-50/40 to-amber-50/80 backdrop-blur-md border border-amber-200 shadow-xs hover:shadow-xl hover:shadow-amber-500/15 hover:border-amber-300 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden"
                             data-aos="fade-up" data-aos-delay="300">
                             <div class="space-y-4">
@@ -936,7 +876,6 @@
                                         Selebrasi
                                     </span>
                                 </div>
-                                {{-- Image Dokumentasi Penutupan --}}
                                 <div
                                     class="relative overflow-hidden rounded-2xl aspect-[4/3] bg-slate-100 border border-slate-100">
                                     <img src="{{ asset('image-misi-sertifikat.png') }}" alt="Penobatan & Sertifikat"
@@ -950,8 +889,7 @@
                                     Seluruh peserta berkumpul untuk berbagi cerita dan merefleksikan pengalaman.
                                     Perjalanan ditutup dengan pembuatan konten foto atau video kreatif sebagai kampanye
                                     digital. Setelah seluruh cap dikumpulkan, panitia menentukan Pemenang Ngider Betawi,
-                                    dan
-                                    seluruh peserta menerima Sertifikat Agen Pelestari Budaya.
+                                    dan seluruh peserta menerima Sertifikat Agen Pelestari Budaya.
                                 </p>
                             </div>
                             <div
@@ -965,18 +903,14 @@
             </div>
         </section>
 
-        {{-- Betawi Section Divider: Wave & Gigi Balang Accent --}}
+        {{-- Betawi Section Divider --}}
         <div class="relative w-full overflow-hidden leading-none py-4 my-6">
-            {{-- Decorative Background Line --}}
             <div class="absolute inset-0 flex items-center" aria-hidden="true">
                 <div class="w-full border-t border-dashed border-amber-300/80"></div>
             </div>
-
-            {{-- Center Badge with Gigi Balang Pattern --}}
             <div class="relative flex justify-center">
                 <div
                     class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-700 text-amber-300 border-2 border-amber-400 shadow-md">
-                    {{-- Gigi Balang Pattern SVG --}}
                     <svg class="w-12 h-3 text-amber-300 fill-current" viewBox="0 0 120 20">
                         <polygon points="0,0 20,0 10,20" />
                         <polygon points="25,0 45,0 35,20" />
@@ -999,13 +933,12 @@
         {{-- Section Materi & Fun Fact Budaya Betawi --}}
         <section id="funfact" class="py-16 bg-white text-slate-800" x-data="{ tab: 'kembar-aer' }">
             <div class="max-w-4xl mx-auto px-4 sm:px-6">
-                {{-- Header Section --}}
                 <div class="text-center mb-8" data-aos="fade-up">
                     <span class="text-amber-600 font-bold text-xs uppercase tracking-widest block mb-2">Fun Fact
                         Betawi</span>
                     <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-1">Materi Budaya Betawi</h2>
                 </div>
-                {{-- Tab Navigation --}}
+
                 <div class="bg-amber-50/60 p-1 rounded-xl flex items-center justify-start sm:justify-between gap-1 mb-6 border border-amber-100/80 overflow-x-auto no-scrollbar"
                     data-aos="fade-up" data-aos-delay="100">
                     <button @click="tab = 'kembar-aer'"
@@ -1030,6 +963,7 @@
                         Topeng Betawi
                     </button>
                 </div>
+
                 {{-- TAB CONTENT: KEMBAR AER --}}
                 <div x-show="tab === 'kembar-aer'" x-transition:enter="transition ease-out duration-300 transform"
                     x-transition:enter-start="opacity-0 translate-y-3 scale-98"
@@ -1040,10 +974,9 @@
                         <h4 class="font-bold text-slate-900 text-base">Apa itu Kembar Aer?</h4>
                         <p class="text-xs sm:text-sm text-slate-600 leading-relaxed italic">
                             Dalam bahasa Betawi, aer berarti air. Filosofi Kembar Aer mengajarkan bahwa manusia dan
-                            sungai tidak bisa
-                            dipisahkan. Jika sungai bersih dan terawat, masyarakat pun hidup sehat. Sebaliknya, saat
-                            sungai rusak, kehidupan
-                            ikut terdampak. Karena itu, menjaga sungai berarti menjaga diri sendiri.
+                            sungai tidak bisa dipisahkan. Jika sungai bersih dan terawat, masyarakat pun hidup sehat.
+                            Sebaliknya, saat sungai rusak, kehidupan ikut terdampak. Karena itu, menjaga sungai berarti
+                            menjaga diri sendiri.
                         </p>
                     </div>
                     <div class="overflow-hidden rounded-2xl aspect-video bg-slate-100 shadow-sm border border-slate-100 group"
@@ -1071,11 +1004,9 @@
                                             'height: 0px; opacity: 0'"
                                         class="px-6 pb-6 text-sm text-slate-600 border-t border-slate-100 pt-4 leading-relaxed overflow-hidden transition-[height,opacity] duration-300 ease-in-out">
                                         Sejak dahulu, Kali Ciliwung menjadi pusat kehidupan masyarakat Betawi. Airnya
-                                        dimanfaatkan
-                                        untuk kebutuhan sehari-hari, mengairi lahan, mencari ikan, hingga menjadi jalur
-                                        transportasi.
-                                        Tak heran jika Ciliwung dianggap sebagai bagian dari identitas masyarakat
-                                        Betawi.
+                                        dimanfaatkan untuk kebutuhan sehari-hari, mengairi lahan, mencari ikan, hingga
+                                        menjadi jalur transportasi. Tak heran jika Ciliwung dianggap sebagai bagian dari
+                                        identitas masyarakat Betawi.
                                     </div>
                                 </div>
 
@@ -1095,11 +1026,9 @@
                                             'height: 0px; opacity: 0'"
                                         class="px-6 pb-6 text-sm text-slate-600 border-t border-slate-100 pt-4 leading-relaxed overflow-hidden transition-[height,opacity] duration-300 ease-in-out">
                                         Kembar Aer mengingatkan kita bahwa alam bukan untuk dieksploitasi, melainkan
-                                        dirawat bersama.
-                                        Sungai bukan musuh penyebab banjir, justru perilaku manusialah yang menentukan
-                                        apakah sungai tetap
-                                        sehat atau rusak. Nilai ini masih sangat relevan untuk kehidupan Jakarta saat
-                                        ini.
+                                        dirawat bersama. Sungai bukan musuh penyebab banjir, justru perilaku manusialah
+                                        yang menentukan apakah sungai tetap sehat atau rusak. Nilai ini masih sangat
+                                        relevan untuk kehidupan Jakarta saat ini.
                                     </div>
                                 </div>
 
@@ -1119,9 +1048,8 @@
                                             'height: 0px; opacity: 0'"
                                         class="px-6 pb-6 text-sm text-slate-600 border-t border-slate-100 pt-4 leading-relaxed overflow-hidden transition-[height,opacity] duration-300 ease-in-out">
                                         Nama-nama kawasan di Jakarta seperti Kampung Pulo, Kalideres, Rawa Belong,
-                                        hingga Cipete
-                                        menunjukkan betapa dekatnya kehidupan masyarakat Betawi dengan air dan sungai
-                                        sejak dahulu
+                                        hingga Cipete menunjukkan betapa dekatnya kehidupan masyarakat Betawi dengan air
+                                        dan sungai sejak dahulu
                                     </div>
                                 </div>
 
@@ -1170,12 +1098,12 @@
                         </div>
                     </div>
                 </div>
+
                 {{-- TAB CONTENT: MARAWIS --}}
                 <div x-show="tab === 'marawis'" x-transition:enter="transition ease-out duration-300 transform"
                     x-transition:enter-start="opacity-0 translate-y-3 scale-98"
                     x-transition:enter-end="opacity-100 translate-y-0 scale-100" class="space-y-6" x-cloak
                     data-aos="fade-up" data-aos-delay="150">
-                    {{-- Grid Gambar Marawis --}}
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4" data-aos="fade-up">
                         <div class="overflow-hidden rounded-2xl aspect-[4/3] bg-slate-100 shadow-sm border border-slate-100 group"
                             data-aos="fade-right">
@@ -1188,7 +1116,6 @@
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
                     </div>
-                    {{-- Detail & Fun Fact --}}
                     <div class="space-y-4 pt-2" data-aos="fade-up">
                         <div class="flex items-center justify-between">
                             <h3 class="font-extrabold text-slate-900 text-lg">1. Pengertian & Asal-Usul Marawis</h3>
@@ -1205,7 +1132,6 @@
                             yang dinyanyikan umumnya berisi pujian dan rasa cinta kepada Sang Pencipta serta shalawat
                             kepada Nabi Muhammad SAW.
                         </p>
-                        {{-- Highlight Fun Fact Box --}}
                         <div class="p-6 rounded-2xl bg-amber-50/60 border-l-4 border-orange-500 border-y border-r border-amber-100/80 space-y-2"
                             data-aos="fade-up" data-aos-delay="150">
                             <h5 class="font-extrabold text-slate-900 text-sm sm:text-base">Fun Fact: Asal-Usul yang
@@ -1240,7 +1166,6 @@
                                 menggunakan tangan (bukan alat pemukul), masyarakat Betawi sering menyebut kesenian ini
                                 sebagai band tepuk atau band gebok.
                             </p>
-                            {{-- Highlight Fun Fact Box --}}
                             <div class="p-6 rounded-2xl bg-amber-50/60 border-l-4 border-orange-500 border-y border-r border-amber-100/80 space-y-2"
                                 data-aos="fade-up" data-aos-delay="150">
                                 <h5 class="font-extrabold text-slate-900 text-sm sm:text-base">Pesan Penting</h5>
@@ -1255,21 +1180,14 @@
                         <div class="space-y-4 pt-2" data-aos="fade-up">
                             <div class="flex items-center justify-between">
                                 <h3 class="font-extrabold text-slate-900 text-lg">3. Fungsi Marawis bagi Masyarakat
-                                    Betawi
-                                </h3>
+                                    Betawi</h3>
                             </div>
-                            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                            <ul class="space-y-2 pl-1">
+                            <ul class="space-y-2 pl-1 text-xs sm:text-sm text-slate-600 leading-relaxed">
                                 <li class="flex items-start gap-2.5">
                                     <span class="w-1.5 h-1.5 rounded-full bg-amber-600 mt-2 shrink-0"></span>
                                     <span>Sarana Dakwah dan Ibadah : Syair-syairnya berisi pujian kepada Allah SWT dan
                                         shalawat kepada Nabi Muhammad SAW, sehingga Marawis menjadi media dakwah yang
                                         menghibur sekaligus mendidik.</span>
-                                </li>
-                                <li class="flex items-start gap-2.5">
-                                    <span class="w-1.5 h-1.5 rounded-full bg-amber-600 mt-2 shrink-0"></span>
-                                    <span>Pengiring Acara Adat & Keagamaan : Ditampilkan dalam acara Maulid Nabi, Isra
-                                        Mi'raj, pengajian, khitanan, hingga arak-arakan pengantin.<span>
                                 </li>
                                 <li class="flex items-start gap-2.5">
                                     <span class="w-1.5 h-1.5 rounded-full bg-amber-600 mt-2 shrink-0"></span>
@@ -1280,14 +1198,13 @@
                                     <span class="w-1.5 h-1.5 rounded-full bg-amber-600 mt-2 shrink-0"></span>
                                     <span>Identitas Budaya Betawi : Perpaduan antara nuansa Timur Tengah dan kearifan
                                         lokal Betawi menjadikan Marawis sebagai salah satu identitas kesenian khas
-                                        masyarakat Betawi yang berlatar belakang Islam.
-                                    </span>
+                                        masyarakat Betawi yang berlatar belakang Islam.</span>
                                 </li>
                             </ul>
-                            </p>
                         </div>
                     </div>
                 </div>
+
                 {{-- TAB CONTENT: TOPENG BETAWI --}}
                 <div x-show="tab === 'topeng'" x-transition:enter="transition ease-out duration-300 transform"
                     x-transition:enter-start="opacity-0 translate-y-3 scale-98"
@@ -1307,8 +1224,7 @@
                     </div>
                     <div class="p-6 rounded-2xl bg-amber-50/50 border border-amber-100/60 space-y-2 hover:shadow-md transition-shadow duration-300"
                         data-aos="fade-up">
-                        <h4 class="font-bold text-slate-900 text-base">1. Apa Itu Topeng Betawi
-                        </h4>
+                        <h4 class="font-bold text-slate-900 text-base">1. Apa Itu Topeng Betawi</h4>
                         <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
                             Topeng Betawi adalah topeng tradisional khas masyarakat Betawi yang berasal dari daerah
                             Jakarta dan sekitarnya. Topeng ini memiliki ciri khas tersendiri yang membedakannya dari
@@ -1318,8 +1234,7 @@
                     </div>
                     <div class="p-6 rounded-2xl bg-amber-50/50 border border-amber-100/60 space-y-2 hover:shadow-md transition-shadow duration-300"
                         data-aos="fade-up">
-                        <h4 class="font-bold text-slate-900 text-base">2. Fungsi di Masa lalu & di Masa Kini
-                        </h4>
+                        <h4 class="font-bold text-slate-900 text-base">2. Fungsi di Masa lalu & di Masa Kini</h4>
                         <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
                             Topeng Betawi dahulu dianggap sebagai benda sakral dan memiliki makna spiritual. Topeng
                             dipercaya dapat menolak bala, melindungi keluarga, serta digunakan dalam upacara adat dan
@@ -1328,21 +1243,18 @@
                             festival budaya, serta sebagai media edukasi untuk mengenalkan budaya Betawi kepada generasi
                             muda.
                         </p>
-                        {{-- Highlight Fun Fact Box --}}
                         <div class="p-6 rounded-2xl bg-amber-50/60 border-l-4 border-orange-500 border-y border-r border-amber-100/80 space-y-2"
                             data-aos="fade-up" data-aos-delay="150">
                             <h5 class="font-extrabold text-slate-900 text-sm sm:text-base">Fun Fact</h5>
                             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
                                 Di masa lalu, topeng Betawi disimpan dengan sangat hati-hati dan tidak boleh sembarang
-                                orang
-                                memegangnya. Hanya orang-orang tertentu yang dianggap memiliki kemampuan spiritual yang
-                                boleh menyimpan dan menggunakannya dalam ritual.
+                                orang memegangnya. Hanya orang-orang tertentu yang dianggap memiliki kemampuan spiritual
+                                yang boleh menyimpan dan menggunakannya dalam ritual.
                             </p>
                         </div>
                     </div>
                     <div class="p-5 sm:p-8 rounded-3xl bg-amber-50/40 border border-amber-100 space-y-6 hover:shadow-xl transition-all duration-300 backdrop-blur-sm"
                         data-aos="fade-up">
-                        {{-- Header Section --}}
                         <div class="space-y-1">
                             <h4 class="font-bold text-slate-900 text-base tracking-tight">
                                 3. Karakter Utama Topeng Betawi
@@ -1388,27 +1300,19 @@
                             ];
                         @endphp
 
-                        {{-- Cards List Container --}}
                         <div class="space-y-5">
                             @foreach ($karakterTopeng as $karakter)
                                 <article
                                     class="group relative overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-amber-400">
-
                                     <div class="grid grid-cols-1 md:grid-cols-12 items-stretch">
-
-                                        {{-- Sisi Foto Karakter (12 cols di HP, 4 cols di Tablet/Desktop) --}}
                                         <div
                                             class="md:col-span-4 relative min-h-[200px] sm:min-h-[230px] bg-slate-100 overflow-hidden">
                                             <img src="{{ asset($karakter['gambar']) }}"
                                                 alt="Topeng Betawi karakter {{ $karakter['nama'] }}"
                                                 class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
-
-                                            {{-- Overlay Gradient pada Foto --}}
                                             <div
                                                 class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent md:bg-gradient-to-r md:from-transparent md:to-slate-900/10">
                                             </div>
-
-                                            {{-- Badge Julukan Melayang di Foto (Khusus Tampilan HP) --}}
                                             <div class="absolute bottom-3 left-3 md:hidden">
                                                 <span
                                                     class="px-2.5 py-1 rounded-md bg-slate-900/80 backdrop-blur-md text-[10px] font-bold text-amber-300 uppercase tracking-wider border border-white/10">
@@ -1417,10 +1321,7 @@
                                             </div>
                                         </div>
 
-                                        {{-- Sisi Informasi Anatomi & Makna (12 cols di HP, 8 cols di Tablet/Desktop) --}}
                                         <div class="md:col-span-8 p-4 sm:p-6 flex flex-col justify-between space-y-4">
-
-                                            {{-- Header Nama & Nomor Urut --}}
                                             <div
                                                 class="flex items-center justify-between border-b border-slate-100 pb-3">
                                                 <div>
@@ -1433,15 +1334,12 @@
                                                         {{ $karakter['nama'] }}
                                                     </h5>
                                                 </div>
-
-                                                {{-- Badge Nomor Urut Bergaya Gradient Emas-Oranye --}}
                                                 <span
                                                     class="flex h-8 w-8 sm:h-9 sm:w-9 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-amber-500 to-amber-600 text-xs sm:text-sm font-black text-white shadow-md shadow-amber-500/20 ring-2 ring-amber-100">
                                                     0{{ $loop->iteration }}
                                                 </span>
                                             </div>
 
-                                            {{-- Anatomi Karakter (Mata, Hidung, Bibir) dalam Grid Card --}}
                                             <dl class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
                                                 <div
                                                     class="p-2.5 rounded-xl bg-slate-50 border border-slate-100/80 group-hover:bg-amber-50/30 transition-colors">
@@ -1474,7 +1372,6 @@
                                                 </div>
                                             </dl>
 
-                                            {{-- Section Makna Karakter & Pill Badge Ciri Khas --}}
                                             <div
                                                 class="pt-2 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                                                 <div class="border-l-3 border-amber-500 pl-3">
@@ -1486,7 +1383,6 @@
                                                     </p>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
                                 </article>
@@ -1494,20 +1390,17 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
 
-        {{-- Betawi Section Divider: Wave & Gigi Balang Accent --}}
+        {{-- Betawi Section Divider --}}
         <div class="relative w-full overflow-hidden leading-none py-4 my-6 group/divider">
-            {{-- Decorative Background Line --}}
             <div class="absolute inset-0 flex items-center" aria-hidden="true">
                 <div class="w-full border-t border-dashed border-amber-300/80"></div>
             </div>
-
-            {{-- Center Badge with Gigi Balang Pattern --}}
             <div class="relative flex justify-center">
                 <div
                     class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-700 text-amber-300 border-2 border-amber-400 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
-                    {{-- Gigi Balang Pattern SVG --}}
                     <svg class="w-12 h-3 text-amber-300 fill-current" viewBox="0 0 120 20">
                         <polygon points="0,0 20,0 10,20" />
                         <polygon points="25,0 45,0 35,20" />
@@ -1552,7 +1445,6 @@
                                     <span class="text-xs text-slate-400 font-medium">Min. 20 Peserta</span>
                                 </div>
 
-                                {{-- Gambar Sampul Paket jika ada --}}
                                 @php
                                     $gambarPaket = $p->gambar
                                         ? (Str::startsWith($p->gambar, 'http')
@@ -1694,18 +1586,14 @@
             </template>
         </dialog>
 
-        {{-- Betawi Section Divider: Wave & Gigi Balang Accent --}}
+        {{-- Betawi Section Divider --}}
         <div class="relative w-full overflow-hidden leading-none py-4 my-6">
-            {{-- Decorative Background Line --}}
             <div class="absolute inset-0 flex items-center" aria-hidden="true">
                 <div class="w-full border-t border-dashed border-amber-300/80"></div>
             </div>
-
-            {{-- Center Badge with Gigi Balang Pattern --}}
             <div class="relative flex justify-center">
                 <div
                     class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-700 text-amber-300 border-2 border-amber-400 shadow-md">
-                    {{-- Gigi Balang Pattern SVG --}}
                     <svg class="w-12 h-3 text-amber-300 fill-current" viewBox="0 0 120 20">
                         <polygon points="0,0 20,0 10,20" />
                         <polygon points="25,0 45,0 35,20" />
@@ -1728,7 +1616,6 @@
         {{-- Galeri Section --}}
         <section id="galeri" class="py-20 bg-white relative overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                {{-- Section Header --}}
                 <div class="text-center max-w-2xl mx-auto mb-12" data-aos="fade-up">
                     <span class="text-amber-600 font-bold text-xs uppercase tracking-widest block mb-1">Dokumentasi
                         Kegiatan</span>
@@ -1796,7 +1683,6 @@
                     }
                 @endphp
 
-                {{-- Main Card Slider --}}
                 <div x-data="{
                     slides: {{ json_encode($listGaleri) }},
                     active: 0,
@@ -1814,7 +1700,6 @@
                             x-transition:leave-end="opacity-0"
                             class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
 
-                            {{-- Sisi Kiri: Foto Lebih Besar (7-Cols Grid) --}}
                             <div class="lg:col-span-7">
                                 <div
                                     class="relative rounded-2xl p-1 bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600 shadow-md overflow-hidden group">
@@ -1834,7 +1719,6 @@
                                 </div>
                             </div>
 
-                            {{-- Sisi Kanan: Informasi Lebih Ringkas & Teks Lebih Kecil (5-Cols Grid) --}}
                             <div class="lg:col-span-5 space-y-4">
                                 <h3 class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                                     x-text="slide.title"></h3>
@@ -1850,10 +1734,8 @@
                         </div>
                     </template>
 
-                    {{-- Controls Bottom Bar --}}
                     <div
                         class="mt-6 pt-5 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-4">
-                        {{-- Dots Navigation --}}
                         <div class="flex items-center gap-1.5">
                             <template x-for="(slide, index) in slides" :key="index">
                                 <button @click="active = index" class="h-2 rounded-full transition-all duration-300"
@@ -1862,7 +1744,6 @@
                             </template>
                         </div>
 
-                        {{-- Arrows Navigation --}}
                         <div class="flex items-center gap-2">
                             <button @click="prev()"
                                 class="w-9 h-9 rounded-lg bg-white border border-slate-200 hover:border-amber-500 hover:text-amber-600 text-slate-600 flex items-center justify-center transition-all active:scale-95 shadow-sm">
@@ -2054,7 +1935,6 @@
     <div x-data="{ showTopBtn: false }" x-init="window.addEventListener('scroll', () => { showTopBtn = window.scrollY > 300 })"
         class="fixed bottom-6 right-6 z-50 flex flex-col gap-3 items-center">
 
-        {{-- Tombol Scroll to Top --}}
         <button x-show="showTopBtn" x-transition:enter="transition ease-out duration-300"
             x-transition:enter-start="opacity-0 translate-y-4 scale-90"
             x-transition:enter-end="opacity-100 translate-y-0 scale-100"
@@ -2070,15 +1950,12 @@
             </svg>
         </button>
 
-        {{-- Tombol Floating WhatsApp --}}
         <a href="https://wa.me/6281317068166?text=Halo%20Admin%20Ngider%20Betawi,%20saya%20ingin%20bertanya%20seputar%20paket%20wisata."
             target="_blank" rel="noopener noreferrer"
             class="w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-300 relative group"
             title="Chat via WhatsApp">
-
             <span
                 class="absolute -inset-1 rounded-full bg-emerald-400 opacity-75 animate-ping group-hover:opacity-0"></span>
-
             <svg class="w-7 h-7 fill-current relative z-10" viewBox="0 0 24 24">
                 <path
                     d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
@@ -2089,7 +1966,6 @@
     {{-- Footer --}}
     <footer x-data="{ openDevModal: false }"
         class="bg-gradient-to-b from-emerald-950 to-stone-900 text-stone-300 py-16 border-t border-amber-600/30 relative overflow-hidden">
-        {{-- Aksen Glow Halus di Background --}}
         <div class="absolute -top-24 -left-24 w-96 h-96 bg-amber-600/5 rounded-full blur-3xl pointer-events-none">
         </div>
         <div
@@ -2097,7 +1973,6 @@
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-                {{-- Deskripsi Brand --}}
                 <div class="md:col-span-1 space-y-4">
                     <div class="flex items-center space-x-3">
                         <img src="{{ asset('logo-ngiderbetawi.png') }}" alt="Logo Ngider Betawi"
@@ -2110,7 +1985,7 @@
                         Sistem Informasi Wisata Edukasi & Gamifikasi Kebudayaan Betawi di Padepokan Ciliwung Condet.
                     </p>
                 </div>
-                {{-- Navigasi Cepat --}}
+
                 <div>
                     <h4 class="text-amber-600 font-bold text-xs mb-4 uppercase tracking-widest">Navigasi Cepat
                     </h4>
@@ -2126,7 +2001,7 @@
                                 Suasana</a></li>
                     </ul>
                 </div>
-                {{-- Kontak & Media Sosial --}}
+
                 <div class="space-y-3">
                     <h4 class="text-amber-600 font-bold text-xs mb-4 uppercase tracking-widest">Hubungi Kami</h4>
                     <ul class="space-y-3 text-xs sm:text-sm text-stone-400">
@@ -2150,12 +2025,10 @@
                         </li>
                     </ul>
 
-                    {{-- Tautan Media Sosial (YouTube & TikTok) --}}
                     <div class="pt-2">
                         <p class="text-[11px] font-semibold text-amber-600 uppercase tracking-wider mb-2">Media Sosial
                         </p>
                         <div class="flex items-center gap-3">
-                            {{-- Instagram SVG --}}
                             <a href="https://www.instagram.com/ngiderbetawi" target="_blank"
                                 rel="noopener noreferrer" title="Instagram Ngider Betawi"
                                 class="flex items-center justify-center w-8 h-8 rounded-lg bg-stone-800/80 border border-stone-700/60 text-stone-400 hover:text-pink-500 hover:bg-pink-500/10 hover:border-pink-500/40 transition-all duration-200">
@@ -2164,7 +2037,6 @@
                                         d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                                 </svg>
                             </a>
-                            {{-- YouTube --}}
                             <a href="https://www.youtube.com/@ngiderbetawi" target="_blank" rel="noopener noreferrer"
                                 title="YouTube Ngider Betawi"
                                 class="flex items-center justify-center w-8 h-8 rounded-lg bg-stone-800/80 border border-stone-700/60 text-stone-400 hover:text-red-500 hover:bg-red-500/10 hover:border-red-500/40 transition-all duration-200">
@@ -2173,8 +2045,6 @@
                                         d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                                 </svg>
                             </a>
-
-                            {{-- TikTok --}}
                             <a href="https://www.tiktok.com/@ngiderbetawi" target="_blank" rel="noopener noreferrer"
                                 title="TikTok Ngider Betawi"
                                 class="flex items-center justify-center w-8 h-8 rounded-lg bg-stone-800/80 border border-stone-700/60 text-stone-400 hover:text-cyan-400 hover:bg-cyan-500/10 hover:border-cyan-500/40 transition-all duration-200">
@@ -2186,7 +2056,7 @@
                         </div>
                     </div>
                 </div>
-                {{-- Lokasi Peta --}}
+
                 <div>
                     <h4 class="text-amber-600 font-bold text-xs mb-4 uppercase tracking-widest">Lokasi Peta</h4>
                     <div class="w-full h-36 rounded-xl overflow-hidden border border-stone-800 shadow-inner relative">
@@ -2198,12 +2068,11 @@
                     </div>
                 </div>
             </div>
-            {{-- Bottom Copyright & Tombol Tim Developer --}}
+
             <div
                 class="pt-8 border-t border-stone-800/80 text-xs text-stone-500 flex flex-col sm:flex-row justify-between items-center gap-3">
                 <p>&copy; {{ date('Y') }} NgiderBetawi - Padepokan Ciliwung Condet.</p>
                 <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
-                    {{-- Tombol Identitas Tim Developer --}}
                     <button type="button" @click="openDevModal = true"
                         class="inline-flex items-center gap-1.5 text-xs text-amber-500/80 hover:text-amber-400 bg-amber-500/10 hover:bg-amber-500/20 px-3 py-1.5 rounded-lg border border-amber-500/20 transition-all duration-200 active:scale-95">
                         <i data-lucide="code-2" class="w-3.5 h-3.5"></i>
@@ -2213,7 +2082,7 @@
                 </div>
             </div>
         </div>
-        {{-- Modal Pop-up Tim Developer --}}
+
         <div x-show="openDevModal" x-transition:enter="transition ease-out duration-300"
             x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
             x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100"
@@ -2222,7 +2091,6 @@
             @keydown.escape.window="openDevModal = false">
             <div @click.away="openDevModal = false"
                 class="bg-stone-900 border border-amber-600/30 rounded-2xl p-6 max-w-md w-full shadow-2xl space-y-5 relative">
-                {{-- Header Modal --}}
                 <div class="flex justify-between items-center border-b border-stone-800 pb-3">
                     <div class="flex items-center gap-2">
                         <i data-lucide="code-2" class="w-5 h-5 text-amber-500"></i>
@@ -2232,11 +2100,10 @@
                         <i data-lucide="x" class="w-5 h-5"></i>
                     </button>
                 </div>
-                {{-- List Pengembang --}}
+
                 <div class="space-y-3">
                     <p class="text-xs text-stone-400">Sistem "Ngider Betawi" dikembangkan dengan bangga oleh:</p>
                     <div class="space-y-2">
-                        {{-- Anggota 1 --}}
                         <a href="https://github.com/dimasgood691-byte" target="_blank" rel="noopener noreferrer"
                             class="flex items-center gap-3 p-2.5 rounded-xl bg-stone-800/50 border border-stone-800 hover:border-amber-500/50 hover:bg-stone-800 transition-all duration-200 group">
                             <div class="flex-1 min-w-0">
@@ -2250,7 +2117,6 @@
                                 class="w-4 h-4 text-stone-500 group-hover:text-amber-400 transition-colors shrink-0"></i>
                         </a>
 
-                        {{-- Anggota 2 --}}
                         <a href="https://github.com/username-anggota-2" target="_blank" rel="noopener noreferrer"
                             class="flex items-center gap-3 p-2.5 rounded-xl bg-stone-800/50 border border-stone-800 hover:border-amber-500/50 hover:bg-stone-800 transition-all duration-200 group">
                             <div class="flex-1 min-w-0">
